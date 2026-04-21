@@ -4,37 +4,1689 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- PRIMARY COLOR -->
-<body style="background: linear-gradient(argub(31, 37, 85), rgb(100, 120, 200));">
+<!-- PRIMARY SEO -->
+<title>Subsurface Modeling Services for Mining &amp; Environmental Projects | GEXPLO</title>
+<meta name="description" content="Independent 3D subsurface, hydrogeological and GIS modeling for mining and environmental projects. Reduce uncertainty, accelerate decisions, de-risk CAPEX. NDA-protected, remote, serving LATAM, Canada, Australia." />
+<meta name="keywords" content="subsurface modeling, geological modeling, hydrogeological modeling, GIS mining, Leapfrog consultant, 3D geological model, resource estimation support, mine planning consultant" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<link rel="canonical" href="https://model.gexplo.com/" />
 
-<!-- IMAGES -->
-<img src="assets/gexplo-logo-small.png" width="300" height="300" style="display: block; margin: auto; padding: 20px;" />
-<b>Gexplo Model Landing Page</b>
+<meta property="og:title" content="Subsurface Modeling Services for Mining &amp; Environmental Projects | GEXPLO" />
+<meta property="og:description" content="3D geological, hydrogeological and GIS modeling to de-risk mining and environmental decisions. Independent. NDA-protected. Serving LATAM, Canada, Australia." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://model.gexplo.com/" />
+<meta property="og:image" content="/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
 
-<!-- ABOUT -><header class="container header">
-$��H1>Gexplo Landing Page</h1>
-<ha class="sub-header">Empower Your Data Analytics Workflow with Open Source Tools</ha>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F172A'/%3E%3Cpath d='M6 20 L16 8 L26 20 M6 24 L26 24' stroke='%2322C55E' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"model.gexplo",
+  "description":"Independent 3D subsurface, hydrogeological and GIS modeling consultancy for mining and environmental projects.",
+  "url":"https://model.gexplo.com",
+  "areaServed":["AR","CL","PE","BR","US","CA","AU"],
+  "serviceType":["Geological Modeling","Hydrogeological Modeling","GIS & Spatial Intelligence","Technical Advisory","Due Diligence"],
+  "parentOrganization":{"@type":"Organization","name":"Gexplo","url":"https://www.gexplo.com"}
+}
+</script>
+
+<meta name="ext-resource-dependency" content="https://cdn.tailwindcss.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Supabase JS client (ESM from esm.sh so we can import in a module script below) -->
+<script type="module">
+  import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+  // Populated by model.gexplo deploy: URL + anon key (safe to embed client-side).
+  const SUPABASE_URL  = "https://yezvnyquslauftcdyoat.supabase.co";
+  const SUPABASE_ANON = "sb_publishable_wCpVGHYJ_NkMfWqIkyy8qA_0lVoD7IM";
+  if (SUPABASE_URL && SUPABASE_URL.indexOf("__SUPABASE") !== 0) {
+    window.__supabase = createClient(SUPABASE_URL, SUPABASE_ANON);
+  }
+</script>
+
+<style>
+  :root {
+    --color-primary:    #22C55E;
+    --color-primary-2:  #1FAE54;
+    --color-background: #050A08;
+    --color-text:       #E5E7EB;
+    --color-accent:     #22C55E;
+    --color-muted:      #94A3B8;
+    --color-hairline:   rgba(148,163,184,0.12);
+    --color-panel:      #0A1310;
+    --color-band:       #0D1612;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "ss01","cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-feature-settings: "zero"; }
+  .hairline { border-color: var(--color-hairline); }
+
+  /* Typography — single H1, explicit hierarchy */
+  h1 { font-weight: 600; letter-spacing: -0.025em; line-height: 1.05; text-wrap: balance; }
+  h2 { font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; text-wrap: balance; }
+  h3 { font-weight: 500; letter-spacing: -0.01em; line-height: 1.2; }
+
+  /* Subtle grid texture */
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(148,163,184,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148,163,184,0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .dot-bg {
+    background-color: #050A08;
+    background-image: radial-gradient(rgba(34,197,94,0.14) 1px, transparent 1.4px);
+    background-size: 22px 22px;
+  }
+  .dot-fade {
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 45%, #000 35%, transparent 80%);
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 45%, #000 35%, transparent 80%);
+  }
+
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+  .eyebrow::before { content: "// "; opacity: 0.5; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    padding: 0.85rem 1.25rem; font-weight: 500; font-size: 0.95rem;
+    border-radius: 2px; transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--color-accent); color: #06130A; border: 1px solid var(--color-accent);
+    font-weight: 600;
+  }
+  .btn-primary:hover { background: #34D76D; border-color: #34D76D; transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent; color: var(--color-text);
+    border: 1px solid rgba(229,231,235,0.22);
+  }
+  .btn-ghost:hover { border-color: var(--color-accent); color: var(--color-accent); }
+  .btn-link {
+    color: var(--color-accent); font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; letter-spacing: 0.05em;
+  }
+  .btn-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+  /* Underline arrow pseudo */
+  .arrow::after { content: "→"; display: inline-block; margin-left: 0.35rem; transition: transform .18s ease; }
+  .arrow:hover::after { transform: translateX(3px); }
+
+  /* Hero animated strata */
+  .stratum { animation: drift 14s ease-in-out infinite alternate; transform-origin: center; }
+  .stratum:nth-child(2) { animation-duration: 18s; animation-delay: -4s; }
+  .stratum:nth-child(3) { animation-duration: 22s; animation-delay: -8s; }
+  @keyframes drift {
+    0%   { transform: translateY(0px); }
+    100% { transform: translateY(-6px); }
+  }
+  .drill-dot {
+    animation: pulse 2.4s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .drill-dot:nth-child(2) { animation-delay: .6s; }
+  .drill-dot:nth-child(3) { animation-delay: 1.2s; }
+  @keyframes pulse {
+    0%,100% { opacity: 0.55; r: 4; }
+    50%     { opacity: 1; r: 6; }
+  }
+
+  /* Accordion */
+  .accordion-panel { max-height: 0; overflow: hidden; transition: max-height .45s ease; }
+  .accordion-panel.open { max-height: 1400px; }
+  .chev { transition: transform .25s ease; }
+  .accordion-trigger[aria-expanded="true"] .chev { transform: rotate(45deg); }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* Modal */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(3,7,5,0.82);
+    backdrop-filter: blur(8px);
+    display: none; align-items: center; justify-content: center; z-index: 80;
+    padding: 1rem;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal-card {
+    background: var(--color-panel); border: 1px solid var(--color-hairline);
+    width: 100%; max-width: 920px; max-height: 90vh; border-radius: 2px;
+    overflow: hidden; position: relative;
+  }
+
+  /* WhatsApp float — lower jerarquía */
+  .wa-float {
+    position: fixed; bottom: 22px; right: 22px; z-index: 60;
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(10,19,16,0.9); border: 1px solid rgba(34,197,94,0.3);
+    display: flex; align-items: center; justify-content: center;
+    color: #22C55E; opacity: 0.7; transition: opacity .2s, transform .2s;
+  }
+  .wa-float:hover { opacity: 1; transform: scale(1.08); }
+
+  /* Counter */
+  .counter-num { font-variant-numeric: tabular-nums; }
+
+  /* Case study card */
+  .case-card {
+    background: linear-gradient(180deg, rgba(15,26,21,0.5) 0%, rgba(10,19,16,0.3) 100%);
+    border: 1px solid var(--color-hairline);
+    transition: border-color .25s ease, transform .25s ease;
+  }
+  .case-card:hover { border-color: rgba(34,197,94,0.35); transform: translateY(-2px); }
+
+  /* Working modes price card */
+  .price-card {
+    background: rgba(10,19,16,0.5); border: 1px solid var(--color-hairline);
+    transition: border-color .25s ease;
+  }
+  .price-card.featured {
+    background: linear-gradient(180deg, rgba(34,197,94,0.06) 0%, rgba(10,19,16,0.6) 100%);
+    border-color: rgba(34,197,94,0.4);
+  }
+
+  /* Storytelling: scene divider */
+  .scene-rule {
+    position: relative; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(34,197,94,0.35) 50%, transparent 100%);
+  }
+  .scene-rule::before {
+    content: ""; position: absolute; left: 50%; top: -3px;
+    width: 7px; height: 7px; background: #22C55E; border-radius: 50%;
+    transform: translateX(-50%); box-shadow: 0 0 14px rgba(34,197,94,0.6);
+  }
+  .story-step { position: relative; padding-left: 3rem; }
+  .story-step::before {
+    content: attr(data-step);
+    position: absolute; left: 0; top: -2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.22em;
+    color: rgba(34,197,94,0.8);
+  }
+  .story-step::after {
+    content: "";
+    position: absolute; left: 0.9rem; top: 1.4rem; bottom: -1rem;
+    width: 1px; background: linear-gradient(to bottom, rgba(34,197,94,0.5), transparent);
+  }
+  .story-step:last-child::after { display: none; }
+  .pull-quote {
+    font-family: 'Inter', sans-serif; font-weight: 300;
+    font-size: clamp(24px, 3vw, 38px); line-height: 1.3;
+    letter-spacing: -0.015em; text-wrap: balance;
+  }
+  .pull-quote .mark { color: #22C55E; font-weight: 500; }
+  .text-reveal > * { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+  .text-reveal.in > * { opacity: 1; transform: translateY(0); }
+  .text-reveal.in > *:nth-child(2) { transition-delay: 120ms; }
+  .text-reveal.in > *:nth-child(3) { transition-delay: 240ms; }
+  .text-reveal.in > *:nth-child(4) { transition-delay: 360ms; }
+
+  /* Focus */
+  *:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: 1px; }
+  ::selection { background: rgba(34,197,94,0.35); color: #fff; }
+
+  /* Inline CTA band */
+  .cta-band {
+    background:
+      radial-gradient(circle at 20% 50%, rgba(34,197,94,0.14), transparent 60%),
+      linear-gradient(90deg, #07110C 0%, #0A1812 100%);
+    border-top: 1px solid var(--color-hairline);
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  /* World map dots */
+  .geo-dot { transition: fill .25s ease; }
+  .geo-pulse { animation: geoPulse 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+  @keyframes geoPulse {
+    0%,100% { opacity: 0.4; }
+    50%     { opacity: 1; }
+  }
+</style>
+
+<template id="__bundler_thumbnail" data-bg-color="#050A08">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#050A08"/>
+    <g stroke="#22C55E" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M200 420 C 400 380, 700 480, 1000 420" opacity="0.9"/>
+      <path d="M200 480 C 400 440, 700 540, 1000 480" opacity="0.7"/>
+      <path d="M200 540 C 400 500, 700 600, 1000 540" opacity="0.5"/>
+      <path d="M200 600 C 400 560, 700 660, 1000 600" opacity="0.3"/>
+    </g>
+    <g fill="#22C55E">
+      <circle cx="340" cy="465" r="9"/>
+      <circle cx="600" cy="495" r="9"/>
+      <circle cx="860" cy="485" r="9"/>
+    </g>
+    <text x="600" y="200" text-anchor="middle" fill="#E5E7EB" font-family="monospace" font-size="28" letter-spacing="6">GEXPLO</text>
+  </svg>
+</template>
+</head>
+
+<body class="min-h-screen">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="sticky top-0 z-40 border-b hairline backdrop-blur-md" style="background: rgba(5,10,8,0.85);">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center" aria-label="Gexplo — home">
+      <img src="assets/gexplo-logo-small.png" alt="Gexplo — Geoscience Consultants" class="h-10 md:h-11 w-auto" style="filter: brightness(0) invert(1);" />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-7 text-[13.5px] text-slate-300" aria-label="Primary">
+      <a class="hover:text-white transition" href="#services" data-i18n="nav_services">Services</a>
+      <a class="hover:text-white transition" href="#process" data-i18n="nav_process">Process</a>
+      <a class="hover:text-white transition" href="#modes" data-i18n="nav_modes">How we work</a>
+      <a class="hover:text-white transition" href="#proof" data-i18n="nav_proof">Proof</a>
+      <a class="hover:text-white transition" href="#about" data-i18n="nav_about">About</a>
+      <a class="hover:text-white transition" href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <div class="hidden md:flex items-center gap-1 mono text-[11px] border hairline rounded-[2px] overflow-hidden" role="group" aria-label="Language">
+        <button class="lang-btn px-2 py-1 text-white bg-white/5" data-lang="en">EN</button>
+        <button class="lang-btn px-2 py-1 text-slate-400" data-lang="es">ES</button>
+      </div>
+      <a href="#contact" class="btn btn-primary text-[13px] px-3.5 py-2" data-i18n="cta_book_short">Book a Call</a>
+    </div>
+  </div>
 </header>
 
-<!-- SECTION 1 - FEATURES -->
-<section class="features container">
-<b>Our Features:</b>
-<d~
-<span class="feature-item">Lycee Open Source KNIME - Powerful Constantin Flow Orchestration For Any Data Processing Pipeline</span>
-</z>
-</section>
-<!-- CALL TO ACTION -->
-<section class="cta" style="text-align: center;">
-<button style="background-color:#0087BE; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 4px; cursor: pointer;">Learn More</button>
+<!-- ============ HERO ============ -->
+<section id="top" class="relative overflow-hidden border-b hairline">
+  <!-- Background art (sub-protagonista) -->
+  <div class="absolute inset-0 dot-bg dot-fade opacity-40" aria-hidden="true"></div>
+  <svg class="absolute inset-0 w-full h-full opacity-[0.14]" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0" stop-color="#050A08" stop-opacity="0"/>
+        <stop offset="1" stop-color="#050A08" stop-opacity="0.9"/>
+      </linearGradient>
+      <linearGradient id="strata1" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#22C55E" stop-opacity="0"/>
+        <stop offset="0.5" stop-color="#22C55E" stop-opacity="0.85"/>
+        <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" stroke="url(#strata1)" stroke-linecap="round">
+      <path class="stratum" stroke-width="1.2" d="M0 480 C 300 430, 600 530, 900 470 S 1400 440, 1600 490"/>
+      <path class="stratum" stroke-width="1.0" d="M0 540 C 300 500, 600 600, 900 540 S 1400 510, 1600 560" opacity="0.75"/>
+      <path class="stratum" stroke-width="0.9" d="M0 600 C 300 570, 600 670, 900 610 S 1400 580, 1600 630" opacity="0.55"/>
+      <path class="stratum" stroke-width="0.8" d="M0 660 C 300 640, 600 740, 900 680 S 1400 650, 1600 700" opacity="0.4"/>
+      <path class="stratum" stroke-width="0.7" d="M0 720 C 300 700, 600 800, 900 740 S 1400 720, 1600 760" opacity="0.25"/>
+    </g>
+    <!-- Drill traces -->
+    <g stroke="#22C55E" stroke-width="1" stroke-dasharray="2 6" opacity="0.45">
+      <line x1="340" y1="250" x2="340" y2="720"/>
+      <line x1="780" y1="250" x2="780" y2="720"/>
+      <line x1="1220" y1="250" x2="1220" y2="720"/>
+    </g>
+    <g fill="#22C55E">
+      <circle class="drill-dot" cx="340" cy="510" r="4"/>
+      <circle class="drill-dot" cx="780" cy="545" r="4"/>
+      <circle class="drill-dot" cx="1220" cy="530" r="4"/>
+    </g>
+    <rect width="1600" height="900" fill="url(#fade)"/>
+  </svg>
+
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 pt-20 pb-24 lg:pt-28 lg:pb-32">
+    <div class="max-w-3xl">
+      <div class="eyebrow mb-5" data-i18n="hero_eyebrow">A Gexplo practice · Paraná, Argentina</div>
+      <h1 class="text-[38px] md:text-[56px] lg:text-[64px] text-white mb-6" data-i18n="hero_h1">
+        We turn messy subsurface data into <span class="text-emerald-400">decisions your team can defend.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mb-5" data-i18n="hero_sub">
+        Independent 3D geological, hydrogeological and GIS modeling for mining and environmental projects. Senior-led, NDA-protected, delivered remotely from our office in Paraná to operators across the Americas, Canada and Australia.
+      </p>
+      <p class="mono text-[12.5px] text-emerald-400/80 mb-9 tracking-wide" data-i18n="hero_micro">
+        Less uncertainty. Faster decisions. CAPEX you can defend.
+      </p>
+      <div class="flex flex-wrap items-center gap-3 mb-10">
+        <a href="#contact" class="btn btn-primary arrow" data-i18n="cta_book">Book a paid consultation</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="cta_quote">Request a quote</a>
+      </div>
+
+      <!-- Inline trust row -->
+      <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-[12px] text-slate-400 mono">
+        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span><span data-i18n="hero_trust_1">NDA-protected</span></div>
+        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span><span data-i18n="hero_trust_2">10+ years field experience</span></div>
+        <div class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span><span data-i18n="hero_trust_3">LATAM · Canada · Australia</span></div>
+      </div>
+
+      <!-- Tools strip -->
+      <div class="mt-8 pt-6 border-t hairline">
+        <div class="mono text-[10px] tracking-[0.22em] uppercase text-slate-500 mb-2" data-i18n="hero_tools_label">Modeling stack</div>
+        <div class="mono text-[12.5px] text-slate-400 flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span>Leapfrog</span><span class="text-slate-600">·</span>
+          <span>Vulcan</span><span class="text-slate-600">·</span>
+          <span>Datamine</span><span class="text-slate-600">·</span>
+          <span>Surpac</span><span class="text-slate-600">·</span>
+          <span>ArcGIS Pro</span><span class="text-slate-600">·</span>
+          <span>QGIS</span><span class="text-slate-600">·</span>
+          <span>Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- PEDRO IMAGE -->
-<img src="assets/pedro.jpg" width="200" height="200" style="display: block; margin: 20px auto; border-radius: 8px;" />
+<!-- ============ SOCIAL PROOF · CLIENT LOGOS (monochrome) ============ -->
+<section class="border-b hairline" aria-label="Selected engagements">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-10">
+    <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-6 text-center" data-i18n="logos_label">
+      Selected engagements · delivered under NDA
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center opacity-80">
+      <div class="flex items-center justify-center h-10 text-slate-400 font-light tracking-wider text-[15px]">PACHÓN</div>
+      <div class="flex items-center justify-center h-10 text-slate-400 font-light tracking-wider text-[15px]">NEWMONT</div>
+      <div class="flex items-center justify-center h-10 text-slate-400 font-light tracking-wider text-[15px]">JOSÉ&nbsp;MARÍA</div>
+      <div class="flex items-center justify-center h-10 text-slate-400 font-light tracking-wider text-[15px]">SALARES</div>
+      <div class="flex items-center justify-center h-10 text-slate-400 font-light tracking-wider text-[15px]">MARA&nbsp;—&nbsp;AGUA&nbsp;RICA</div>
+    </div>
+  </div>
+</section>
 
-<!-- FOOTER, CONTEXT", ETC -->
-<footer style="background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;">
-<p>Gexplo - Empowering Data Analytics </p>
-<p><a href="https://permico.io" style="color: #0087BE;">Visit our website</a></p>
+<!-- ============ METRICS ============ -->
+<section class="border-b hairline">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-14 md:py-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6" id="metrics-grid">
+      <!-- populated via JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section id="problem" class="border-b hairline relative">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-4">
+        <div class="eyebrow mb-4" data-i18n="problem_eyebrow">The cost of uncertainty</div>
+        <h2 class="text-3xl md:text-[40px] text-white" data-i18n="problem_h2">
+          Bad subsurface assumptions scale fast.
+        </h2>
+      </div>
+      <div class="md:col-span-8 space-y-6 text-slate-300 text-[17px] leading-relaxed">
+        <p data-i18n="problem_p1">
+          In mining and environmental projects, every decision compounds on what's assumed to be beneath the surface. A poorly integrated hydrogeological dataset, an outdated geological model, or a disconnected GIS layer can translate into months of rework, misallocated CAPEX, or permitting delays worth millions.
+        </p>
+        <p data-i18n="problem_p2">
+          Most operators don't lack data — they lack the specialized hand to integrate, interpret and model it at the level their decisions demand. That's where we come in.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-4">
+          <div class="border-l-2 border-emerald-500/40 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="problem_pain_1_t">Delayed decisions</div>
+            <div class="text-[14px] text-slate-400 leading-relaxed" data-i18n="problem_pain_1_d">Teams stuck waiting on a geologist to reconcile conflicting datasets.</div>
+          </div>
+          <div class="border-l-2 border-emerald-500/40 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="problem_pain_2_t">Hidden risk</div>
+            <div class="text-[14px] text-slate-400 leading-relaxed" data-i18n="problem_pain_2_d">Models that don't reflect recent drilling or updated structural interpretations.</div>
+          </div>
+          <div class="border-l-2 border-emerald-500/40 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="problem_pain_3_t">Tool sprawl</div>
+            <div class="text-[14px] text-slate-400 leading-relaxed" data-i18n="problem_pain_3_d">Leapfrog, ArcGIS, QGIS, Surpac — nobody stitching outputs into a coherent picture.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STORY · THE GEXPLO DIFFERENCE ============ -->
+<section class="border-b hairline relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30 drift-slow" aria-hidden="true"></div>
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-28">
+    <div class="max-w-3xl mb-14 reveal text-reveal">
+      <div class="eyebrow mb-5" data-i18n="story_eyebrow">Why projects with us resolve differently</div>
+      <p class="pull-quote text-white" data-i18n="story_quote">
+        Most consultancies subcontract parts of the work. <span class="mark">We keep field, lab and data under one roof</span> — which is why our answers show up sooner, hold up under audit, and don’t unravel when someone asks “where does this number come from?”
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-10 md:gap-14">
+      <div class="reveal">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-[0.22em] uppercase mb-3" data-i18n="story_1_tag">— One team</div>
+        <h3 class="text-white text-[20px] mb-3 font-medium" data-i18n="story_1_h">Field, lab and data in a single team.</h3>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="story_1_p">
+          Drilling logs, hydro samples and GIS layers don’t travel through a chain of subcontractors before they hit the model. Fewer handoffs, fewer translation errors, tighter timelines.
+        </p>
+      </div>
+      <div class="reveal" style="transition-delay:120ms">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-[0.22em] uppercase mb-3" data-i18n="story_2_tag">— Auditable</div>
+        <h3 class="text-white text-[20px] mb-3 font-medium" data-i18n="story_2_h">Every result, traceable to its source.</h3>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="story_2_p">
+          When required, we implement blockchain-based data traceability across the report chain — so clients can verify that a number was never silently altered between the field and the final deliverable.
+        </p>
+      </div>
+      <div class="reveal" style="transition-delay:240ms">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-[0.22em] uppercase mb-3" data-i18n="story_3_tag">— Speed + certainty</div>
+        <h3 class="text-white text-[20px] mb-3 font-medium" data-i18n="story_3_h">More speed, less uncertainty.</h3>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="story_3_p">
+          Implicit 3D modeling in Leapfrog paired with our own processing tooling lets us deliver sharper answers in less time — especially on projects where drilling, structural and hydro datasets all need to reconcile.
+        </p>
+      </div>
+    </div>
+
+    <div class="scene-rule mt-20"></div>
+  </div>
+</section>
+
+<!-- ============ STORY · HOW A PROJECT UNFOLDS ============ -->
+<section id="process" class="border-b hairline" style="background: var(--color-band);">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10 mb-14">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-3" data-i18n="process_eyebrow">How a project unfolds</div>
+        <h2 class="text-3xl md:text-[40px] text-white" data-i18n="process_h2">Four acts. No surprises.</h2>
+      </div>
+      <div class="md:col-span-7 self-end text-slate-400 text-[16px] leading-relaxed">
+        <p data-i18n="process_intro">From first email to final handoff, every engagement follows the same disciplined arc — so you always know which act we’re in, and what ships at the end of it.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-x-10 gap-y-10 reveal text-reveal">
+      <div class="story-step" data-step="01">
+        <div class="text-white text-lg font-medium mb-2" data-i18n="proc_1_h">You write to info@gexplo.com.</div>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="proc_1_p">A short brief: stage, commodity, site, the question that’s blocking a decision. We reply within one business day — usually faster.</p>
+      </div>
+      <div class="story-step" data-step="02">
+        <div class="text-white text-lg font-medium mb-2" data-i18n="proc_2_h">30-min scoping call, under NDA.</div>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="proc_2_p">We sign the NDA before anything sensitive moves. You show the data, we ask the uncomfortable questions, and we agree on whether this is an hourly session, a fixed-scope project or a retainer.</p>
+      </div>
+      <div class="story-step" data-step="03">
+        <div class="text-white text-lg font-medium mb-2" data-i18n="proc_3_h">Proposal in 48–72 hours.</div>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="proc_3_p">Deliverables, timeline, price, assumptions, exclusions. Paid upfront. Session credits apply toward project work within 30 days.</p>
+      </div>
+      <div class="story-step" data-step="04">
+        <div class="text-white text-lg font-medium mb-2" data-i18n="proc_4_h">Execution — then clean handoff.</div>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed" data-i18n="proc_4_p">Weekly async updates, milestone reviews, final delivery in your stack (Leapfrog, Surpac, Vulcan, ArcGIS). Source data returned or wiped. Your people can audit every step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (3 strategic blocks) ============ -->
+<section id="services" class="border-b hairline relative">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="max-w-2xl">
+        <div class="eyebrow mb-3" data-i18n="services_eyebrow">Services</div>
+        <h2 class="text-3xl md:text-[44px] text-white" data-i18n="services_h2">
+          A strategic offer — not a tool checklist.
+        </h2>
+        <p class="mt-4 text-slate-400 text-[16px] leading-relaxed" data-i18n="services_intro">
+          Three focused tracks. Each one is framed around the problem it solves, the outcome you get, and how it plugs into your team's workflow.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 1 — Premium -->
+    <div class="mb-5">
+      <button class="accordion-trigger w-full text-left p-7 md:p-9 rounded-[3px] border transition" style="background: linear-gradient(135deg, rgba(34,197,94,0.09) 0%, rgba(10,19,16,0.6) 60%); border-color: rgba(34,197,94,0.4);" aria-expanded="true" data-target="b1-panel">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div class="flex items-start gap-5">
+            <div class="mono text-[12px] text-emerald-400 tracking-widest pt-1">01</div>
+            <div>
+              <div class="mono text-[10px] tracking-[0.18em] uppercase text-emerald-400/80 mb-1.5" data-i18n="b1_tag">Core · Premium</div>
+              <h3 class="text-white text-[22px] md:text-[26px] mb-2" data-i18n="b1_h3">Subsurface Modeling</h3>
+              <div class="text-slate-300 text-[15px] max-w-2xl leading-relaxed" data-i18n="b1_lead">
+                3D geological and hydrogeological models that translate raw drilling, structural and environmental data into defensible decisions.
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-5 shrink-0">
+            <div class="mono text-[12px] text-slate-400 hidden md:block" data-i18n="b1_price">Custom scope · quote</div>
+            <div class="chev text-emerald-400 text-2xl leading-none">+</div>
+          </div>
+        </div>
+      </button>
+      <div class="accordion-panel open" id="b1-panel">
+        <div class="p-7 md:p-9 border-x border-b hairline rounded-b-[3px] grid md:grid-cols-3 gap-10" style="background: rgba(10,19,16,0.5);">
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_problem">The problem</div>
+            <p class="text-slate-300 text-[14.5px] leading-relaxed" data-i18n="b1_problem">
+              Fragmented drill data, outdated structural surfaces and hydro datasets that don't talk to each other — slowing estimation, mine planning and permitting.
+            </p>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-emerald-400/80 mb-2" data-i18n="ps_solution">What we deliver</div>
+            <ul class="text-slate-300 text-[14.5px] leading-relaxed space-y-2 list-none">
+              <li data-i18n="b1_s1">— Implicit 3D geological modeling (Leapfrog Geo / Works)</li>
+              <li data-i18n="b1_s2">— Structural &amp; lithological reinterpretation</li>
+              <li data-i18n="b1_s3">— Hydrogeological data integration &amp; interpretation</li>
+              <li data-i18n="b1_s4">— Resource estimation support &amp; validation</li>
+              <li data-i18n="b1_s5">— Deliverables in your stack (Leapfrog, Vulcan, Datamine, Surpac)</li>
+            </ul>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_result">The result</div>
+            <p class="text-slate-300 text-[14.5px] leading-relaxed mb-5" data-i18n="b1_result">
+              A single source of subsurface truth your engineers, hydrogeologists and planners can build on — with every assumption defensible in audit.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="#contact" class="btn btn-primary text-[13px] py-2 px-3.5" data-i18n="cta_quote_short">Request a quote</a>
+              <a href="#contact" class="btn btn-ghost text-[13px] py-2 px-3.5" data-i18n="cta_scoping">Scoping call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 2 — Entry -->
+    <div class="mb-5">
+      <button class="accordion-trigger w-full text-left p-6 md:p-7 rounded-[3px] border hairline transition hover:border-slate-500/40" style="background: rgba(10,19,16,0.5);" aria-expanded="false" data-target="b2-panel">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div class="flex items-start gap-5">
+            <div class="mono text-[12px] text-slate-500 tracking-widest pt-1">02</div>
+            <div>
+              <div class="mono text-[10px] tracking-[0.18em] uppercase text-slate-500 mb-1.5" data-i18n="b2_tag">Entry · Fast turnaround</div>
+              <h3 class="text-white text-[20px] md:text-[22px] mb-2" data-i18n="b2_h3">GIS &amp; Spatial Intelligence</h3>
+              <div class="text-slate-400 text-[14.5px] max-w-2xl leading-relaxed" data-i18n="b2_lead">
+                Clean, reproducible spatial workflows — cartography, analysis and automation — to turn raw geospatial data into clear operational answers.
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-5 shrink-0">
+            <div class="mono text-[12px] text-slate-400 hidden md:block" data-i18n="b2_price">From USD 200 to 3,000</div>
+            <div class="chev text-slate-400 text-2xl leading-none">+</div>
+          </div>
+        </div>
+      </button>
+      <div class="accordion-panel" id="b2-panel">
+        <div class="p-6 md:p-7 border-x border-b hairline rounded-b-[3px] grid md:grid-cols-3 gap-10" style="background: rgba(10,19,16,0.3);">
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_problem">The problem</div>
+            <p class="text-slate-400 text-[14px] leading-relaxed" data-i18n="b2_problem">
+              GIS layers scattered across teams, inconsistent projections, manual repeats of the same map every quarter.
+            </p>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-emerald-400/80 mb-2" data-i18n="ps_solution">What we deliver</div>
+            <ul class="text-slate-400 text-[14px] leading-relaxed space-y-2 list-none">
+              <li data-i18n="b2_s1">— Thematic &amp; technical cartography (ArcGIS Pro, QGIS)</li>
+              <li data-i18n="b2_s2">— Spatial analysis &amp; geoprocessing</li>
+              <li data-i18n="b2_s3">— Workflow automation (Python, ModelBuilder)</li>
+              <li data-i18n="b2_s4">— Data integration across field, lab and legacy sources</li>
+            </ul>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_result">The result</div>
+            <p class="text-slate-400 text-[14px] leading-relaxed mb-4" data-i18n="b2_result">
+              Repeatable spatial workflows your team actually uses — with maps that answer questions instead of decorating reports.
+            </p>
+            <a href="#contact" class="btn btn-ghost text-[13px] py-2 px-3.5" data-i18n="cta_quote_short">Request a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Block 3 — Advisory -->
+    <div>
+      <button class="accordion-trigger w-full text-left p-6 md:p-7 rounded-[3px] border hairline transition hover:border-slate-500/40" style="background: rgba(10,19,16,0.5);" aria-expanded="false" data-target="b3-panel">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          <div class="flex items-start gap-5">
+            <div class="mono text-[12px] text-slate-500 tracking-widest pt-1">03</div>
+            <div>
+              <div class="mono text-[10px] tracking-[0.18em] uppercase text-slate-500 mb-1.5" data-i18n="b3_tag">Monetization · Advisory</div>
+              <h3 class="text-white text-[20px] md:text-[22px] mb-2" data-i18n="b3_h3">Expert Support, Advisory &amp; Due Diligence</h3>
+              <div class="text-slate-400 text-[14.5px] max-w-2xl leading-relaxed" data-i18n="b3_lead">
+                On-demand senior expertise for technical reviews, second opinions, due diligence support and embedded advisory — billed hourly or retainer.
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-5 shrink-0">
+            <div class="mono text-[12px] text-emerald-400 hidden md:block" data-i18n="b3_price">From USD 75/h</div>
+            <div class="chev text-slate-400 text-2xl leading-none">+</div>
+          </div>
+        </div>
+      </button>
+      <div class="accordion-panel" id="b3-panel">
+        <div class="p-6 md:p-7 border-x border-b hairline rounded-b-[3px] grid md:grid-cols-3 gap-10" style="background: rgba(10,19,16,0.3);">
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_problem">The problem</div>
+            <p class="text-slate-400 text-[14px] leading-relaxed" data-i18n="b3_problem">
+              You need a senior set of eyes on a model, report or acquisition — without the cost and calendar of a full consultancy engagement.
+            </p>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-emerald-400/80 mb-2" data-i18n="ps_solution">What we deliver</div>
+            <ul class="text-slate-400 text-[14px] leading-relaxed space-y-2 list-none">
+              <li data-i18n="b3_s1">— Technical review of 3D models &amp; interpretations</li>
+              <li data-i18n="b3_s2">— Due diligence support (M&amp;A, permitting, investor)</li>
+              <li data-i18n="b3_s3">— Second opinion on resource &amp; reserve workflows</li>
+              <li data-i18n="b3_s4">— Embedded advisory via monthly retainer</li>
+            </ul>
+          </div>
+          <div>
+            <div class="mono text-[10.5px] tracking-[0.18em] uppercase text-slate-500 mb-2" data-i18n="ps_result">The result</div>
+            <p class="text-slate-400 text-[14px] leading-relaxed mb-4" data-i18n="b3_result">
+              Defensible, senior-level input exactly when you need it — see pricing in the next section.
+            </p>
+            <a href="#modes" class="btn-link arrow" data-i18n="b3_see_pricing">See pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS & PLATFORMS (subtle band) ============ -->
+<section class="border-b hairline" aria-label="Tools and platforms">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-12 md:py-14">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-4">
+        <div class="mono text-[10.5px] tracking-[0.22em] uppercase text-emerald-400/80 mb-2" data-i18n="tools_eyebrow">Tools &amp; Platforms</div>
+        <h3 class="text-white text-[20px] md:text-[22px] font-medium leading-snug" data-i18n="tools_h3">Industry-standard software, applied with discipline.</h3>
+        <p class="text-slate-500 text-[13.5px] leading-relaxed mt-3 max-w-md" data-i18n="tools_p">
+          We work inside the tools your team already trusts — chosen for what each one is actually good at, not because we own a license.
+        </p>
+      </div>
+      <div class="md:col-span-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 mono text-[13px]">
+          <div><div class="text-white mb-0.5">Leapfrog Geo</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_leapfrog">Implicit 3D modeling</div></div>
+          <div><div class="text-white mb-0.5">Vulcan</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_vulcan">Mine planning &amp; resource</div></div>
+          <div><div class="text-white mb-0.5">Datamine</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_datamine">Resource estimation</div></div>
+          <div><div class="text-white mb-0.5">Surpac</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_surpac">Geological databases</div></div>
+          <div><div class="text-white mb-0.5">ArcGIS Pro</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_arcgis">Spatial analysis</div></div>
+          <div><div class="text-white mb-0.5">QGIS</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_qgis">Open-source GIS</div></div>
+          <div><div class="text-white mb-0.5">Python</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_python">Automation &amp; pipelines</div></div>
+          <div><div class="text-white mb-0.5">FEFLOW / MODFLOW</div><div class="text-slate-500 text-[11.5px] uppercase tracking-wider" data-i18n="tool_feflow">Hydrogeological sim</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKING MODES · PRICING ============ -->
+<section id="modes" class="border-b hairline" style="background: var(--color-band);">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10 mb-14">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-3" data-i18n="modes_eyebrow">How we work</div>
+        <h2 class="text-3xl md:text-[40px] text-white" data-i18n="modes_h2">Three ways to engage.</h2>
+      </div>
+      <div class="md:col-span-7 text-slate-400 text-[16px] leading-relaxed self-end">
+        <p data-i18n="modes_intro">
+          Hourly consultation for tactical questions, fixed-scope projects for modeling work, and retainers for teams that need a senior geologist on call. All engagements are paid upfront; session credits apply toward project work within 30 days.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hourly consultation (visible pricing) -->
+    <div class="mb-12">
+      <div class="mono text-[11px] tracking-[0.18em] uppercase text-slate-500 mb-5" data-i18n="modes_hourly_label">Expert consultation · hourly</div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="price-card p-7 rounded-[3px]">
+          <div class="mono text-[11px] text-slate-500 mb-2" data-i18n="tier1_tag">Standard session</div>
+          <div class="text-white text-3xl mb-1">USD 75<span class="text-slate-500 text-base font-light">/h</span></div>
+          <div class="text-[13px] text-slate-400 leading-relaxed mt-3" data-i18n="tier1_desc">
+            Scheduled 48h+ in advance. Technical Q&amp;A, scoping, preliminary review.
+          </div>
+        </div>
+        <div class="price-card featured p-7 rounded-[3px]">
+          <div class="mono text-[11px] text-emerald-400 mb-2" data-i18n="tier2_tag">Advanced session</div>
+          <div class="text-white text-3xl mb-1">USD 90–120<span class="text-slate-500 text-base font-light">/h</span></div>
+          <div class="text-[13px] text-slate-400 leading-relaxed mt-3" data-i18n="tier2_desc">
+            Deep technical work: live model review, interpretation critique, strategic input.
+          </div>
+        </div>
+        <div class="price-card p-7 rounded-[3px]">
+          <div class="mono text-[11px] text-slate-500 mb-2" data-i18n="tier3_tag">Urgent session</div>
+          <div class="text-white text-3xl mb-1">USD 120–150<span class="text-slate-500 text-base font-light">/h</span></div>
+          <div class="text-[13px] text-slate-400 leading-relaxed mt-3" data-i18n="tier3_desc">
+            Same-week or off-hours. Priority scheduling, rapid response.
+          </div>
+        </div>
+      </div>
+      <div class="mono text-[11px] text-slate-500 mt-4" data-i18n="modes_hourly_note">
+        All sessions paid upfront. Unused time within an engagement is credited toward project work up to 30 days.
+      </div>
+    </div>
+
+    <!-- Project-based + Retainer -->
+    <div class="grid md:grid-cols-2 gap-5">
+      <div class="price-card p-7 rounded-[3px]">
+        <div class="mono text-[11px] tracking-[0.18em] uppercase text-slate-500 mb-3" data-i18n="modes_project_label">Project-based modeling</div>
+        <div class="text-white text-2xl mb-3" data-i18n="modes_project_h">Fixed-scope engagements</div>
+        <p class="text-slate-400 text-[14.5px] leading-relaxed mb-4" data-i18n="modes_project_p">
+          Defined deliverables, defined timeline, defined price. For 3D geological models, hydrogeological integrations, GIS builds and due diligence. Quote within 48–72h of scoping call.
+        </p>
+        <a href="#contact" class="btn-link arrow" data-i18n="modes_project_cta">Request a quote</a>
+      </div>
+      <div class="price-card p-7 rounded-[3px]">
+        <div class="mono text-[11px] tracking-[0.18em] uppercase text-slate-500 mb-3" data-i18n="modes_retainer_label">Ongoing support · retainer</div>
+        <div class="text-white text-2xl mb-3" data-i18n="modes_retainer_h">Monthly retainers</div>
+        <ul class="text-slate-400 text-[14.5px] leading-relaxed space-y-1.5 mb-4 list-none">
+          <li data-i18n="retainer_1"><span class="text-white">Essential</span> · USD 300/mo — on-call hours + async review</li>
+          <li data-i18n="retainer_2"><span class="text-white">Active</span> · USD 700/mo — weekly syncs, deeper involvement</li>
+          <li data-i18n="retainer_3"><span class="text-white">Embedded</span> · USD 1,200+/mo — dedicated bandwidth, roadmap input</li>
+        </ul>
+        <a href="#contact" class="btn-link arrow" data-i18n="modes_retainer_cta">Discuss a retainer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INLINE CTA BAND ============ -->
+<div class="cta-band">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+    <div>
+      <div class="mono text-[11px] tracking-[0.18em] uppercase text-emerald-400 mb-1" data-i18n="midcta_eyebrow">Next step</div>
+      <div class="text-white text-xl md:text-2xl" data-i18n="midcta_h">Have a model, dataset, or due-diligence question?</div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3">
+      <a href="#contact" class="btn btn-primary arrow" data-i18n="cta_book">Book a paid consultation</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="cta_quote">Request a quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SOCIAL PROOF · CASE SNAPSHOTS ============ -->
+<section id="proof" class="border-b hairline">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="max-w-2xl">
+        <div class="eyebrow mb-3" data-i18n="proof_eyebrow">Proof · anonymized case snapshots</div>
+        <h2 class="text-3xl md:text-[40px] text-white" data-i18n="proof_h2">
+          Client names protected. Outcomes are real.
+        </h2>
+      </div>
+      <div class="mono text-[11px] text-slate-500 max-w-sm" data-i18n="proof_note">
+        All engagements under NDA. Details abstracted; approach and results representative of actual work.
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <!-- Case 1 -->
+      <article class="case-card p-7 rounded-[3px]">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-widest mb-3" data-i18n="case1_tag">CU-AU PORPHYRY · SAN JUAN, AR</div>
+        <h3 class="text-white text-xl mb-3" data-i18n="case1_h">3D geological remodel &amp; resource support</h3>
+        <div class="mono text-[11px] text-slate-500 uppercase tracking-wider mb-2" data-i18n="case1_challenge_l">Challenge</div>
+        <p class="text-slate-400 text-[14px] leading-relaxed mb-4" data-i18n="case1_challenge">
+          Outdated structural model conflicting with recent infill drilling; blocking resource update.
+        </p>
+        <div class="mono text-[11px] text-emerald-400/80 uppercase tracking-wider mb-2" data-i18n="case1_outcome_l">Outcome</div>
+        <p class="text-slate-300 text-[14px] leading-relaxed" data-i18n="case1_outcome">
+          Full structural and lithological reinterpretation in Leapfrog Geo; resource estimation unblocked in 6 weeks.
+        </p>
+      </article>
+
+      <!-- Case 2 -->
+      <article class="case-card p-7 rounded-[3px]">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-widest mb-3" data-i18n="case2_tag">LITHIUM BRINE · PUNA, AR</div>
+        <h3 class="text-white text-xl mb-3" data-i18n="case2_h">Hydrogeological data integration</h3>
+        <div class="mono text-[11px] text-slate-500 uppercase tracking-wider mb-2" data-i18n="case2_challenge_l">Challenge</div>
+        <p class="text-slate-400 text-[14px] leading-relaxed mb-4" data-i18n="case2_challenge">
+          Multi-year pump test and geochem datasets fragmented across consultants; permitting timeline at risk.
+        </p>
+        <div class="mono text-[11px] text-emerald-400/80 uppercase tracking-wider mb-2" data-i18n="case2_outcome_l">Outcome</div>
+        <p class="text-slate-300 text-[14px] leading-relaxed" data-i18n="case2_outcome">
+          Integrated database and consistent 3D hydrogeological framework delivered to EIA team; permitting on schedule.
+        </p>
+      </article>
+
+      <!-- Case 3 -->
+      <article class="case-card p-7 rounded-[3px]">
+        <div class="mono text-[10.5px] text-emerald-400 tracking-widest mb-3" data-i18n="case3_tag">DUE DILIGENCE · PRE-M&amp;A</div>
+        <h3 class="text-white text-xl mb-3" data-i18n="case3_h">Independent technical review</h3>
+        <div class="mono text-[11px] text-slate-500 uppercase tracking-wider mb-2" data-i18n="case3_challenge_l">Challenge</div>
+        <p class="text-slate-400 text-[14px] leading-relaxed mb-4" data-i18n="case3_challenge">
+          Buyer needed a senior second opinion on target's geological and hydro models before committing to LOI.
+        </p>
+        <div class="mono text-[11px] text-emerald-400/80 uppercase tracking-wider mb-2" data-i18n="case3_outcome_l">Outcome</div>
+        <p class="text-slate-300 text-[14px] leading-relaxed" data-i18n="case3_outcome">
+          Critical red-flags memo delivered in 10 working days; informed renegotiation of deal terms.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GLOBAL REACH ============ -->
+<section id="reach" class="border-b hairline" style="background: var(--color-band);">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-3" data-i18n="reach_eyebrow">Global reach</div>
+        <h2 class="text-3xl md:text-[40px] text-white mb-5" data-i18n="reach_h2">
+          Remote-first. Built for cross-border projects.
+        </h2>
+        <p class="text-slate-400 text-[16px] leading-relaxed mb-6" data-i18n="reach_p">
+          Based in Argentina, serving mining and environmental operators across the Americas, Canada and Australia. Priced in USD. Delivered remotely with clear async cadence. On-site visits arranged when the scope demands it.
+        </p>
+        <div class="grid grid-cols-2 gap-4 mono text-[12.5px]">
+          <div class="border hairline rounded-[2px] px-3 py-2.5 text-slate-300">🇦🇷 <span data-i18n="reach_r1">Argentina · Chile · Peru · Brazil</span></div>
+          <div class="border hairline rounded-[2px] px-3 py-2.5 text-slate-300">🇺🇸 <span data-i18n="reach_r2">United States</span></div>
+          <div class="border hairline rounded-[2px] px-3 py-2.5 text-slate-300">🇨🇦 <span data-i18n="reach_r3">Canada</span></div>
+          <div class="border hairline rounded-[2px] px-3 py-2.5 text-slate-300">🇦🇺 <span data-i18n="reach_r4">Australia</span></div>
+        </div>
+      </div>
+      <div class="md:col-span-7">
+        <!-- Abstract world dots -->
+        <svg viewBox="0 0 700 380" class="w-full h-auto" aria-hidden="true">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%">
+              <stop offset="0%" stop-color="#22C55E" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Dotted continents (abstract) -->
+          <g fill="rgba(148,163,184,0.18)">
+            <!-- North America -->
+            <circle cx="170" cy="130" r="2"/><circle cx="180" cy="120" r="2"/><circle cx="190" cy="125" r="2"/><circle cx="200" cy="115" r="2"/>
+            <circle cx="160" cy="140" r="2"/><circle cx="175" cy="145" r="2"/><circle cx="195" cy="140" r="2"/><circle cx="210" cy="135" r="2"/>
+            <circle cx="180" cy="160" r="2"/><circle cx="195" cy="165" r="2"/><circle cx="215" cy="155" r="2"/><circle cx="225" cy="165" r="2"/>
+            <circle cx="200" cy="180" r="2"/><circle cx="215" cy="185" r="2"/><circle cx="230" cy="180" r="2"/>
+            <!-- South America -->
+            <circle cx="230" cy="225" r="2"/><circle cx="245" cy="230" r="2"/><circle cx="240" cy="250" r="2"/><circle cx="255" cy="255" r="2"/>
+            <circle cx="245" cy="275" r="2"/><circle cx="260" cy="280" r="2"/><circle cx="250" cy="300" r="2"/><circle cx="255" cy="320" r="2"/>
+            <!-- Europe -->
+            <circle cx="360" cy="130" r="2"/><circle cx="375" cy="135" r="2"/><circle cx="370" cy="150" r="2"/><circle cx="385" cy="145" r="2"/>
+            <!-- Africa -->
+            <circle cx="375" cy="200" r="2"/><circle cx="390" cy="215" r="2"/><circle cx="380" cy="240" r="2"/><circle cx="395" cy="260" r="2"/>
+            <circle cx="385" cy="280" r="2"/>
+            <!-- Asia -->
+            <circle cx="480" cy="140" r="2"/><circle cx="500" cy="150" r="2"/><circle cx="520" cy="155" r="2"/><circle cx="540" cy="160" r="2"/>
+            <circle cx="510" cy="175" r="2"/><circle cx="530" cy="185" r="2"/><circle cx="550" cy="180" r="2"/>
+            <!-- Australia -->
+            <circle cx="570" cy="270" r="2"/><circle cx="590" cy="275" r="2"/><circle cx="605" cy="285" r="2"/><circle cx="580" cy="290" r="2"/>
+          </g>
+
+          <!-- Active markers -->
+          <g>
+            <!-- LATAM (cluster) -->
+            <circle cx="250" cy="260" r="18" fill="url(#glow)" class="geo-pulse"/>
+            <circle cx="250" cy="260" r="5" fill="#22C55E"/>
+            <!-- Canada -->
+            <circle cx="185" cy="125" r="14" fill="url(#glow)" class="geo-pulse" style="animation-delay:.5s"/>
+            <circle cx="185" cy="125" r="4" fill="#22C55E"/>
+            <!-- USA -->
+            <circle cx="210" cy="170" r="12" fill="url(#glow)" class="geo-pulse" style="animation-delay:1s"/>
+            <circle cx="210" cy="170" r="4" fill="#22C55E"/>
+            <!-- Australia -->
+            <circle cx="590" cy="280" r="14" fill="url(#glow)" class="geo-pulse" style="animation-delay:1.5s"/>
+            <circle cx="590" cy="280" r="4" fill="#22C55E"/>
+          </g>
+
+          <!-- Connection arcs from Argentina -->
+          <g fill="none" stroke="#22C55E" stroke-width="0.6" opacity="0.35" stroke-dasharray="3 4">
+            <path d="M 250 270 Q 220 220 185 125"/>
+            <path d="M 250 270 Q 240 220 210 170"/>
+            <path d="M 250 270 Q 450 150 590 280"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT · AUTHORITY ============ -->
+<section id="about" class="border-b hairline">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-4" data-i18n="about_eyebrow">About</div>
+        <h2 class="text-3xl md:text-[40px] text-white mb-5" data-i18n="about_h2">
+          Senior geology. No handoffs. No diluted expertise.
+        </h2>
+        <div class="aspect-[4/5] border hairline rounded-[3px] relative overflow-hidden mb-5" style="background: var(--color-panel);">
+          <img src="assets/pedro.jpg" alt="Pedro Daniel Cardoso Justo — Senior Geologist" class="absolute inset-0 w-full h-full object-cover" style="filter: grayscale(1) contrast(1.05);"/>
+          <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 55%, rgba(5,10,8,0.92) 100%);"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-5">
+            <div class="text-white text-lg font-medium">Pedro Daniel Cardoso Justo</div>
+            <div class="mono text-[11px] text-emerald-400 tracking-wider" data-i18n="about_role">Senior Geologist · Founder</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <p class="text-slate-200 text-[18px] leading-relaxed mb-6" data-i18n="about_p1">
+          Led by <span class="text-white font-medium">Pedro Daniel Cardoso Justo</span>, senior geologist with 10+ years delivering 3D subsurface modeling, GIS and hydrogeological data work on mining and environmental projects across Argentina, Chile and beyond.
+        </p>
+        <p class="text-slate-400 text-[15.5px] leading-relaxed mb-8" data-i18n="about_p2">
+          Pedro specializes in translating messy field reality — drillholes, structural mapping, pump tests, geochem — into defensible 3D models decision-makers can act on. model.gexplo is his premium, independent practice, backed by Gexplo's multidisciplinary team of environmental scientists, biologists and GIS specialists when a project needs broader bandwidth.
+        </p>
+
+        <div class="grid grid-cols-2 gap-5 mb-8">
+          <div class="border-l-2 border-emerald-500/50 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="about_strength_1_t">3D Geological Modeling</div>
+            <div class="text-[13px] text-slate-400 leading-relaxed" data-i18n="about_strength_1_d">Leapfrog Geo/Works · implicit modeling · resource support</div>
+          </div>
+          <div class="border-l-2 border-emerald-500/50 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="about_strength_2_t">Hydrogeological Integration</div>
+            <div class="text-[13px] text-slate-400 leading-relaxed" data-i18n="about_strength_2_d">Data reconciliation · conceptual models · EIA support</div>
+          </div>
+          <div class="border-l-2 border-emerald-500/50 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="about_strength_3_t">GIS &amp; Automation</div>
+            <div class="text-[13px] text-slate-400 leading-relaxed" data-i18n="about_strength_3_d">ArcGIS Pro · QGIS · Python · reproducible workflows</div>
+          </div>
+          <div class="border-l-2 border-emerald-500/50 pl-4">
+            <div class="text-white font-medium mb-1" data-i18n="about_strength_4_t">Team on tap</div>
+            <div class="text-[13px] text-slate-400 leading-relaxed" data-i18n="about_strength_4_d">Gexplo — environmental, biology, GIS — scaled to scope</div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-ghost arrow" data-i18n="about_cta">Talk to Pedro</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIDENTIALITY ============ -->
+<section id="confidentiality" class="border-b hairline relative overflow-hidden" style="background: var(--color-band);">
+  <svg class="absolute inset-0 w-full h-full opacity-[0.35]" aria-hidden="true">
+    <defs>
+      <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="1" fill="rgba(34,197,94,0.16)"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#dots)"/>
+  </svg>
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-3" data-i18n="conf_eyebrow">Confidentiality</div>
+        <h2 class="text-3xl md:text-[40px] text-white" data-i18n="conf_h2">Your data stays yours.</h2>
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-slate-300 text-[16.5px] leading-relaxed mb-8" data-i18n="conf_p">
+          Every engagement is bound by NDA before any data moves. Source files stay on your side or are returned and wiped at handoff. No case studies are published without written consent.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="flex items-start gap-3">
+            <div class="mt-1 text-emerald-400">✓</div>
+            <div>
+              <div class="text-white font-medium mb-0.5" data-i18n="conf_pillar_1_t">NDA before kickoff</div>
+              <div class="text-[13.5px] text-slate-400" data-i18n="conf_pillar_1_d">Your template or ours. No exceptions.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 text-emerald-400">✓</div>
+            <div>
+              <div class="text-white font-medium mb-0.5" data-i18n="conf_pillar_2_t">Encrypted transfer</div>
+              <div class="text-[13.5px] text-slate-400" data-i18n="conf_pillar_2_d">Client-provided buckets or encrypted drops.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 text-emerald-400">✓</div>
+            <div>
+              <div class="text-white font-medium mb-0.5" data-i18n="conf_pillar_3_t">Data returned &amp; wiped</div>
+              <div class="text-[13.5px] text-slate-400" data-i18n="conf_pillar_3_d">Documented handoff at project close.</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="mt-1 text-emerald-400">✓</div>
+            <div>
+              <div class="text-white font-medium mb-0.5" data-i18n="conf_pillar_4_t">No public case studies</div>
+              <div class="text-[13.5px] text-slate-400" data-i18n="conf_pillar_4_d">Abstracted references only, with written consent.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="border-b hairline">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20 md:py-24">
+    <div class="grid md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <div class="eyebrow mb-3" data-i18n="contact_eyebrow">Contact</div>
+        <h2 class="text-3xl md:text-[40px] text-white mb-5" data-i18n="contact_h2">Start with a scoping call.</h2>
+        <p class="text-slate-400 text-[16px] leading-relaxed mb-8" data-i18n="contact_p">
+          15 minutes, free, no pitch. You bring the question; we tell you whether it's an hourly session, a fixed-scope project or a retainer — and what a realistic timeline looks like.
+        </p>
+
+        <div class="space-y-4">
+          <button id="open-calendly" class="btn btn-primary w-full md:w-auto arrow" data-i18n="contact_book">Email info@gexplo.com</button>
+          <div class="mono text-[12px] text-slate-500" data-i18n="contact_or">or send us a brief →</div>
+        </div>
+
+        <div class="mt-10 space-y-3 text-[14px]">
+          <div class="flex gap-3"><span class="mono text-slate-500 w-24 shrink-0">EMAIL</span><a class="text-slate-200 hover:text-emerald-400" href="mailto:info@gexplo.com">info@gexplo.com</a></div>
+          <div class="flex gap-3"><span class="mono text-slate-500 w-24 shrink-0">WHATSAPP</span><a class="text-slate-200 hover:text-emerald-400" href="#" id="wa-link">+54 9 …</a></div>
+          <div class="flex gap-3"><span class="mono text-slate-500 w-24 shrink-0">OFFICE</span><span class="text-slate-200 leading-relaxed" data-i18n="contact_address">Mirador Téc · Gregoria Matorras de San Martín 861, of. 106 · E3100 Paraná, Entre Ríos, Argentina</span></div>
+          <div class="flex gap-3"><span class="mono text-slate-500 w-24 shrink-0">HOURS</span><span class="text-slate-200" data-i18n="contact_hours">Mon–Fri · 09:00–18:00 ART (UTC-3)</span></div>
+        </div>
+      </div>
+
+      <div class="md:col-span-7">
+        <form id="contact-form" class="border hairline rounded-[3px] p-6 md:p-8" style="background: rgba(10,19,16,0.5);" novalidate>
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <label class="block">
+              <span class="mono text-[11px] text-slate-500 tracking-widest uppercase" data-i18n="form_name">Name</span>
+              <input id="f-name" name="name" required type="text" autocomplete="name" class="mt-2 w-full bg-transparent border-b hairline focus:border-emerald-400 text-white py-2 outline-none"/>
+            </label>
+            <label class="block">
+              <span class="mono text-[11px] text-slate-500 tracking-widest uppercase" data-i18n="form_email">Email</span>
+              <input id="f-email" name="email" required type="email" autocomplete="email" class="mt-2 w-full bg-transparent border-b hairline focus:border-emerald-400 text-white py-2 outline-none"/>
+            </label>
+            <label class="block">
+              <span class="mono text-[11px] text-slate-500 tracking-widest uppercase" data-i18n="form_company">Company</span>
+              <input id="f-company" name="company" type="text" autocomplete="organization" class="mt-2 w-full bg-transparent border-b hairline focus:border-emerald-400 text-white py-2 outline-none"/>
+            </label>
+            <label class="block">
+              <span class="mono text-[11px] text-slate-500 tracking-widest uppercase" data-i18n="form_service">Service of interest</span>
+              <select id="f-service" name="service" class="mt-2 w-full bg-transparent border-b hairline focus:border-emerald-400 text-white py-2 outline-none">
+                <option value="" class="bg-[#0A1310]" data-i18n="form_select">Select…</option>
+                <option value="modeling" class="bg-[#0A1310]" data-i18n="form_opt_1">Subsurface modeling (project)</option>
+                <option value="gis" class="bg-[#0A1310]" data-i18n="form_opt_2">GIS &amp; spatial intelligence</option>
+                <option value="advisory" class="bg-[#0A1310]" data-i18n="form_opt_3">Expert consultation (hourly)</option>
+                <option value="dd" class="bg-[#0A1310]" data-i18n="form_opt_4">Due diligence / technical review</option>
+                <option value="retainer" class="bg-[#0A1310]" data-i18n="form_opt_5">Monthly retainer</option>
+              </select>
+            </label>
+          </div>
+          <label class="block mb-5">
+            <span class="mono text-[11px] text-slate-500 tracking-widest uppercase" data-i18n="form_brief">Brief</span>
+            <textarea id="f-brief" name="brief" rows="4" maxlength="500" class="mt-2 w-full bg-transparent border hairline focus:border-emerald-400 text-white p-3 outline-none rounded-[2px]" data-i18n-placeholder="form_brief_ph" placeholder="Project stage, commodity, location, key question, timeline…"></textarea>
+            <div class="flex justify-between items-center mt-1">
+              <span class="mono text-[10px] text-slate-600" data-i18n="form_nda_note">NDA available on request before sharing specifics.</span>
+              <span class="mono text-[10px] text-slate-600"><span id="char-count">0</span> / 500</span>
+            </div>
+          </label>
+          <div class="flex flex-wrap items-center gap-4">
+            <button type="submit" class="btn btn-primary arrow" data-i18n="form_send">Send brief</button>
+            <span class="mono text-[10.5px] text-slate-500" data-i18n="form_privacy">Your data is used only to reply. Never shared.</span>
+          </div>
+          <div id="form-error" class="hidden mt-4 mono text-[12px] text-red-400"></div>
+          <div id="form-success" class="hidden mt-4 mono text-[12px] text-emerald-400" data-i18n="form_success">✓ Thanks — opening your email client to send…</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="cta-band">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10 py-16 text-center">
+    <h2 class="text-white text-3xl md:text-4xl mb-4" data-i18n="final_h">Ready when your project is.</h2>
+    <p class="text-slate-400 text-[16px] mb-7 max-w-xl mx-auto" data-i18n="final_p">
+      Book a scoping call, request a quote, or email directly. NDA on request.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="#contact" class="btn btn-primary arrow" data-i18n="cta_book">Book a paid consultation</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="cta_quote">Request a quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="pt-16 pb-12">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10 pb-10 border-b hairline">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <img src="assets/gexplo-logo-small.png" alt="Gexplo" class="h-7 w-auto" style="filter: brightness(0) invert(1);" />
+        </div>
+        <p class="text-[13px] text-slate-500 leading-relaxed" data-i18n="foot_tagline">
+          Independent subsurface modeling for mining and environmental projects. A Gexplo practice.
+        </p>
+      </div>
+      <div>
+        <div class="mono text-[11px] text-slate-500 tracking-widest uppercase mb-3" data-i18n="foot_services">Services</div>
+        <ul class="space-y-2 text-[13.5px] text-slate-400">
+          <li><a href="#services" class="hover:text-emerald-400" data-i18n="nav_b1">Subsurface modeling</a></li>
+          <li><a href="#services" class="hover:text-emerald-400" data-i18n="nav_b2">GIS &amp; spatial intelligence</a></li>
+          <li><a href="#services" class="hover:text-emerald-400" data-i18n="nav_b3">Expert support &amp; advisory</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mono text-[11px] text-slate-500 tracking-widest uppercase mb-3" data-i18n="foot_company">Company</div>
+        <ul class="space-y-2 text-[13.5px] text-slate-400">
+          <li><a href="#about" class="hover:text-emerald-400" data-i18n="nav_about">About</a></li>
+          <li><a href="#confidentiality" class="hover:text-emerald-400" data-i18n="nav_nda">Confidentiality</a></li>
+          <li><a href="https://www.gexplo.com" target="_blank" rel="noopener" class="hover:text-emerald-400">gexplo.com ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mono text-[11px] text-slate-500 tracking-widest uppercase mb-3" data-i18n="foot_contact">Contact</div>
+        <ul class="space-y-2 text-[13.5px] text-slate-400">
+          <li><a href="mailto:info@gexplo.com" class="hover:text-emerald-400">info@gexplo.com</a></li>
+          <li><a href="#contact" class="hover:text-emerald-400" data-i18n="cta_book_short">Write to us</a></li>
+          <li><a href="#" id="wa-link-foot" class="hover:text-emerald-400">WhatsApp</a></li>
+          <li class="text-slate-500 text-[12px] leading-relaxed pt-2" data-i18n="foot_addr">Mirador Téc · Gregoria Matorras 861 of. 106<br/>E3100 Paraná, Entre Ríos · AR</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[12px] mono text-slate-500">
+      <div>© <span id="year"></span> Gexplo · model.gexplo — <span data-i18n="foot_rights">All rights reserved.</span></div>
+      <div data-i18n="foot_base">Argentina · Serving the Americas, Canada &amp; Australia</div>
+    </div>
+  </div>
 </footer>
+
+<!-- WhatsApp float (low hierarchy) -->
+<a href="#" id="wa-float" class="wa-float" aria-label="WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-1 1.1-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.3 0-.5-.1-.1-.7-1.6-1-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.4.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.2-.3-.2-.6-.4z"/>
+    <path d="M20.5 3.5A10 10 0 0 0 3.9 17.3L3 21l3.8-.9A10 10 0 1 0 20.5 3.5zm-8.5 16c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-2.3.6.6-2.2-.2-.3A8.3 8.3 0 1 1 20.3 12a8.3 8.3 0 0 1-8.3 8.3z"/>
+  </svg>
+</a>
+
+<script>
+/* ============================================================
+   CONFIG — replace these before launch
+   ============================================================ */
+const CONFIG = {
+  WHATSAPP_NUMBER: "5493434506385",
+  WHATSAPP_DISPLAY: "+54 9 3434 50-6385",
+  EMAIL: "info@gexplo.com",
+  FOUNDER_NAME: "Pedro Daniel Cardoso Justo",
+  FOUNDER_YEARS: 10,
+  ADDRESS: "Mirador Téc, Gregoria Matorras de San Martín 861, of. 106, E3100 Paraná, Entre Ríos, Argentina",
+};
+
+/* ============================================================
+   METRICS DATA
+   ============================================================ */
+const metricsData = [
+  { key:"m_years",    val:10,  suffix:"+", label_en:"Years in subsurface",       label_es:"Años en subsuelo" },
+  { key:"m_projects", val:50,  suffix:"+", label_en:"Projects delivered",        label_es:"Proyectos entregados" },
+  { key:"m_countries",val:7,   suffix:"",  label_en:"Countries served",          label_es:"Países atendidos" },
+  { key:"m_nda",      val:100, suffix:"%", label_en:"NDA-protected engagements", label_es:"Engagements bajo NDA" },
+];
+
+/* ============================================================
+   i18n
+   ============================================================ */
+const translations = {
+  en: {
+    nav_process:"Process", nav_services:"Services", nav_modes:"How we work", nav_proof:"Proof", nav_about:"About", nav_contact:"Contact",
+    cta_book:"Email us about your project", cta_book_short:"Write to us", cta_quote:"Request a quote", cta_quote_short:"Request a quote", cta_scoping:"Scoping email",
+
+    hero_eyebrow:"A GEXPLO specialized practice · Paraná, Argentina",
+    hero_h1:"We turn messy subsurface data into <span class=\"text-emerald-400\">decisions your team can defend.</span>",
+    hero_sub:"Independent 3D geological, hydrogeological and GIS modeling for mining and environmental projects. Senior-led, NDA-protected, delivered remotely from our office in Paraná to operators across the Americas, Canada and Australia.",
+    hero_micro:"Less uncertainty. Faster decisions. CAPEX you can defend.",
+    hero_trust_1:"NDA-protected", hero_trust_2:"10+ years field experience", hero_trust_3:"LATAM · Canada · Australia",
+    hero_tools_label:"Modeling stack",
+
+    tools_eyebrow:"Tools & Platforms",
+    tools_h3:"Industry-standard software, applied with discipline.",
+    tools_p:"We work inside the tools your team already trusts — chosen for what each one is actually good at, not because we own a license.",
+    tool_leapfrog:"Implicit 3D modeling", tool_vulcan:"Mine planning & resource", tool_datamine:"Resource estimation", tool_surpac:"Geological databases",
+    tool_arcgis:"Spatial analysis", tool_qgis:"Open-source GIS", tool_python:"Automation & pipelines", tool_feflow:"Hydrogeological sim",
+
+    logos_label:"Selected engagements · delivered under NDA",
+
+    problem_eyebrow:"The cost of uncertainty",
+    problem_h2:"Bad subsurface assumptions scale fast.",
+    problem_p1:"In mining and environmental projects, every decision compounds on what's assumed to be beneath the surface. A poorly integrated hydrogeological dataset, an outdated geological model, or a disconnected GIS layer can translate into months of rework, misallocated CAPEX, or permitting delays worth millions.",
+    problem_p2:"Most operators don't lack data — they lack the specialized hand to integrate, interpret and model it at the level their decisions demand. That's where we come in.",
+    problem_pain_1_t:"Delayed decisions", problem_pain_1_d:"Teams stuck waiting on a geologist to reconcile conflicting datasets.",
+    problem_pain_2_t:"Hidden risk", problem_pain_2_d:"Models that don't reflect recent drilling or updated structural interpretations.",
+    problem_pain_3_t:"Tool sprawl", problem_pain_3_d:"Leapfrog, ArcGIS, QGIS, Surpac — nobody stitching outputs into a coherent picture.",
+
+    story_eyebrow:"Why projects with us resolve differently",
+    story_quote:"Most consultancies subcontract parts of the work. <span class=\"mark\">We keep field, lab and data under one roof</span> — which is why our answers show up sooner, hold up under audit, and don’t unravel when someone asks “where does this number come from?”",
+    story_1_tag:"— One team", story_1_h:"Field, lab and data in a single team.",
+    story_1_p:"Drilling logs, hydro samples and GIS layers don’t travel through a chain of subcontractors before they hit the model. Fewer handoffs, fewer translation errors, tighter timelines.",
+    story_2_tag:"— Auditable", story_2_h:"Every result, traceable to its source.",
+    story_2_p:"When required, we implement blockchain-based data traceability across the report chain — so clients can verify that a number was never silently altered between the field and the final deliverable.",
+    story_3_tag:"— Speed + certainty", story_3_h:"More speed, less uncertainty.",
+    story_3_p:"Implicit 3D modeling in Leapfrog paired with our own processing tooling lets us deliver sharper answers in less time — especially on projects where drilling, structural and hydro datasets all need to reconcile.",
+
+    process_eyebrow:"How a project unfolds", process_h2:"Four acts. No surprises.",
+    process_intro:"From first email to final handoff, every engagement follows the same disciplined arc — so you always know which act we’re in, and what ships at the end of it.",
+    proc_1_h:"You write to info@gexplo.com.", proc_1_p:"A short brief: stage, commodity, site, the question that’s blocking a decision. We reply within one business day — usually faster.",
+    proc_2_h:"30-min scoping call, under NDA.", proc_2_p:"We sign the NDA before anything sensitive moves. You show the data, we ask the uncomfortable questions, and we agree on whether this is an hourly session, a fixed-scope project or a retainer.",
+    proc_3_h:"Proposal in 48–72 hours.", proc_3_p:"Deliverables, timeline, price, assumptions, exclusions. Paid upfront. Session credits apply toward project work within 30 days.",
+    proc_4_h:"Execution — then clean handoff.", proc_4_p:"Weekly async updates, milestone reviews, final delivery in your stack (Leapfrog, Surpac, Vulcan, ArcGIS). Source data returned or wiped. Your people can audit every step.",
+
+    services_eyebrow:"Services",
+    services_h2:"Subsurface modeling, GIS and advisory — three focused tracks.",
+    services_intro:"Three focused tracks. Each one is framed around the problem it solves, the outcome you get, and how it plugs into your team's workflow.",
+    ps_problem:"The problem", ps_solution:"What we deliver", ps_result:"The result",
+
+    b1_tag:"Core · Premium", b1_h3:"Subsurface Modeling",
+    b1_lead:"3D geological and hydrogeological models that translate raw drilling, structural and environmental data into defensible decisions.",
+    b1_price:"Custom scope · quote",
+    b1_problem:"Fragmented drill data, outdated structural surfaces and hydro datasets that don't talk to each other — slowing estimation, mine planning and permitting.",
+    b1_s1:"— Implicit 3D geological modeling (Leapfrog Geo / Works)", b1_s2:"— Structural & lithological reinterpretation", b1_s3:"— Hydrogeological data integration & interpretation", b1_s4:"— Resource estimation support & validation", b1_s5:"— Deliverables in your stack (Leapfrog, Vulcan, Datamine, Surpac)",
+    b1_result:"A single source of subsurface truth your engineers, hydrogeologists and planners can build on — with every assumption defensible in audit.",
+
+    b2_tag:"Entry · Fast turnaround", b2_h3:"GIS & Spatial Intelligence",
+    b2_lead:"Clean, reproducible spatial workflows — cartography, analysis and automation — to turn raw geospatial data into clear operational answers.",
+    b2_price:"From USD 200 to 3,000",
+    b2_problem:"GIS layers scattered across teams, inconsistent projections, manual repeats of the same map every quarter.",
+    b2_s1:"— Thematic & technical cartography (ArcGIS Pro, QGIS)", b2_s2:"— Spatial analysis & geoprocessing", b2_s3:"— Workflow automation (Python, ModelBuilder)", b2_s4:"— Data integration across field, lab and legacy sources",
+    b2_result:"Repeatable spatial workflows your team actually uses — with maps that answer questions instead of decorating reports.",
+
+    b3_tag:"Monetization · Advisory", b3_h3:"Expert Support, Advisory & Due Diligence",
+    b3_lead:"On-demand senior expertise for technical reviews, second opinions, due diligence support and embedded advisory — billed hourly or retainer.",
+    b3_price:"From USD 75/h",
+    b3_problem:"You need a senior set of eyes on a model, report or acquisition — without the cost and calendar of a full consultancy engagement.",
+    b3_s1:"— Technical review of 3D models & interpretations", b3_s2:"— Due diligence support (M&A, permitting, investor)", b3_s3:"— Second opinion on resource & reserve workflows", b3_s4:"— Embedded advisory via monthly retainer",
+    b3_result:"Defensible, senior-level input exactly when you need it — see pricing in the next section.",
+    b3_see_pricing:"See pricing",
+
+    modes_eyebrow:"How we work", modes_h2:"Three ways to engage.",
+    modes_intro:"Hourly consultation for tactical questions, fixed-scope projects for modeling work, and retainers for teams that need a senior geologist on call. All engagements are paid upfront; session credits apply toward project work within 30 days.",
+    modes_hourly_label:"Expert consultation · hourly",
+    tier1_tag:"Standard session", tier1_desc:"Scheduled 48h+ in advance. Technical Q&A, scoping, preliminary review.",
+    tier2_tag:"Advanced session", tier2_desc:"Deep technical work: live model review, interpretation critique, strategic input.",
+    tier3_tag:"Urgent / out-of-hours",   tier3_desc:"Same-week, weekends or outside 08–17 ART. Priority scheduling, extraordinary rate.",
+    modes_hourly_note:"All sessions paid upfront. Unused time within an engagement is credited toward project work up to 30 days.",
+    modes_project_label:"Project-based modeling", modes_project_h:"Fixed-scope engagements",
+    modes_project_p:"Defined deliverables, defined timeline, defined price. For 3D geological models, hydrogeological integrations, GIS builds and due diligence. Quote within 48–72h of scoping call.",
+    modes_project_cta:"Request a quote",
+    modes_retainer_label:"Ongoing support · retainer", modes_retainer_h:"Monthly retainers",
+    retainer_1:"Essential · USD 300/mo — on-call hours + async review",
+    retainer_2:"Active · USD 700/mo — weekly syncs, deeper involvement",
+    retainer_3:"Embedded · USD 1,200+/mo — dedicated bandwidth, roadmap input",
+    modes_retainer_cta:"Discuss a retainer",
+
+    midcta_eyebrow:"Next step", midcta_h:"Have a model, dataset, or due-diligence question?",
+
+    proof_eyebrow:"Proof · anonymized case snapshots",
+    proof_h2:"Client names protected. Outcomes are real.",
+    proof_note:"All engagements under NDA. Details abstracted; approach and results representative of actual work.",
+    case1_tag:"CU-AU PORPHYRY · SAN JUAN, AR", case1_h:"3D geological remodel & resource support",
+    case1_challenge_l:"Challenge", case1_challenge:"Outdated structural model conflicting with recent infill drilling; blocking resource update.",
+    case1_outcome_l:"Outcome", case1_outcome:"Full structural and lithological reinterpretation in Leapfrog Geo; resource estimation unblocked in 6 weeks.",
+    case2_tag:"LITHIUM BRINE · PUNA, AR", case2_h:"Hydrogeological data integration",
+    case2_challenge_l:"Challenge", case2_challenge:"Multi-year pump test and geochem datasets fragmented across consultants; permitting timeline at risk.",
+    case2_outcome_l:"Outcome", case2_outcome:"Integrated database and consistent 3D hydrogeological framework delivered to EIA team; permitting on schedule.",
+    case3_tag:"DUE DILIGENCE · PRE-M&A", case3_h:"Independent technical review",
+    case3_challenge_l:"Challenge", case3_challenge:"Buyer needed a senior second opinion on target's geological and hydro models before committing to LOI.",
+    case3_outcome_l:"Outcome", case3_outcome:"Critical red-flags memo delivered in 10 working days; informed renegotiation of deal terms.",
+
+    reach_eyebrow:"Global reach",
+    reach_h2:"Remote-first. Built for cross-border projects.",
+    reach_p:"Based in Argentina, serving mining and environmental operators across the Americas, Canada and Australia. Priced in USD. Delivered remotely with clear async cadence. On-site visits arranged when the scope demands it.",
+    reach_r1:"Argentina · Chile · Peru · Brazil", reach_r2:"United States", reach_r3:"Canada", reach_r4:"Australia",
+
+    about_eyebrow:"About",
+    about_h2:"Direct expert involvement. No layers between data and decision.",
+    about_role:"Senior Geologist · Founder",
+    about_p1:"Led by Pedro Daniel Cardoso Justo, senior geologist with 10+ years delivering 3D subsurface modeling, GIS and hydrogeological data work on mining and environmental projects across Argentina, Chile and beyond.",
+    about_p2:"Pedro specializes in translating messy field reality — drillholes, structural mapping, pump tests, geochem — into defensible 3D models decision-makers can act on. model.gexplo is the specialized subsurface-modeling unit within GEXPLO, backed by a network of 3D modeling specialists when a project demands broader bandwidth.",
+    about_strength_1_t:"3D Geological Modeling", about_strength_1_d:"Leapfrog Geo/Works · implicit modeling · resource support",
+    about_strength_2_t:"Hydrogeological Integration", about_strength_2_d:"Data reconciliation · conceptual models · EIA support",
+    about_strength_3_t:"GIS & Automation", about_strength_3_d:"ArcGIS Pro · QGIS · Python · reproducible workflows",
+    about_strength_4_t:"Modeling team on tap", about_strength_4_d:"Network of specialized 3D modelers scaled to scope",
+    about_cta:"Talk to Pedro",
+
+    conf_eyebrow:"Confidentiality", conf_h2:"Your data stays yours.",
+    conf_p:"Every engagement is bound by NDA before any data moves. Source files stay on your side or are returned and wiped at handoff. No case studies are published without written consent.",
+    conf_pillar_1_t:"NDA before kickoff", conf_pillar_1_d:"Your template or ours. No exceptions.",
+    conf_pillar_2_t:"Encrypted transfer", conf_pillar_2_d:"Client-provided buckets or encrypted drops.",
+    conf_pillar_3_t:"Data returned & wiped", conf_pillar_3_d:"Documented handoff at project close.",
+    conf_pillar_4_t:"No public case studies", conf_pillar_4_d:"Abstracted references only, with written consent.",
+
+    contact_eyebrow:"Contact", contact_h2:"Start with a scoping call.",
+    contact_p:"15 minutes, free, no pitch. You bring the question; we tell you whether it's an hourly session, a fixed-scope project or a retainer — and what a realistic timeline looks like.",
+    contact_book:"Email info@gexplo.com", contact_or:"or send a structured brief below →", contact_base:"Paraná, Entre Ríos · Argentina",
+    contact_address:"Mirador Téc · Gregoria Matorras de San Martín 861, of. 106 · E3100 Paraná, Entre Ríos, Argentina",
+    contact_hours:"Mon–Fri · 08:00–17:00 ART (UTC-3) · Out-of-hours available as extraordinary rate",
+    foot_addr:"Mirador Téc · Gregoria Matorras 861 of. 106<br/>E3100 Paraná, Entre Ríos · AR",
+    form_name:"Name", form_email:"Email", form_company:"Company", form_service:"Service of interest",
+    form_select:"Select…", form_opt_1:"Subsurface modeling (project)", form_opt_2:"GIS & spatial intelligence", form_opt_3:"Expert consultation (hourly)", form_opt_4:"Due diligence / technical review", form_opt_5:"Monthly retainer",
+    form_brief:"Brief", form_brief_ph:"Project stage, commodity, location, key question, timeline…",
+    form_nda_note:"NDA available on request before sharing specifics.",
+    form_send:"Send brief", form_privacy:"Your data is used only to reply. Never shared.",
+    form_success:"✓ Thanks — opening your email client to send…",
+
+    final_h:"Ready when your project is.", final_p:"Book a scoping call, request a quote, or email directly. NDA on request.",
+
+    foot_tagline:"Independent subsurface modeling for mining and environmental projects. The specialized subsurface practice of GEXPLO.",
+    foot_services:"Services", foot_company:"Company", foot_contact:"Contact",
+    nav_b1:"Subsurface modeling", nav_b2:"GIS & spatial intelligence", nav_b3:"Expert support & advisory",
+    nav_nda:"Confidentiality",
+    foot_rights:"All rights reserved.", foot_base:"Argentina · Serving the Americas, Canada & Australia",
+
+    m_years:"Years in subsurface", m_projects:"Projects delivered", m_countries:"Countries served", m_nda:"NDA-protected engagements",
+  },
+  es: {
+    nav_process:"Proceso", nav_services:"Servicios", nav_modes:"Cómo trabajamos", nav_proof:"Casos", nav_about:"Nosotros", nav_contact:"Contacto",
+    cta_book:"Escribinos sobre tu proyecto", cta_book_short:"Escribinos", cta_quote:"Pedir cotización", cta_quote_short:"Pedir cotización", cta_scoping:"Email de scoping",
+
+    hero_eyebrow:"Una práctica especializada de GEXPLO · Paraná, Argentina",
+    hero_h1:"Convertimos datos caóticos del subsuelo en <span class=\"text-emerald-400\">decisiones que tu equipo puede defender.</span>",
+    hero_sub:"Modelación 3D geológica, hidrogeológica y GIS independiente para minería y proyectos ambientales. Liderada por un geólogo senior, bajo NDA, entregada en remoto desde nuestra oficina en Paraná a operadoras de todo América, Canadá y Australia.",
+    hero_micro:"Menos incertidumbre. Decisiones más rápidas. CAPEX defendible.",
+    hero_trust_1:"Bajo NDA", hero_trust_2:"10+ años de experiencia en campo", hero_trust_3:"LATAM · Canadá · Australia",
+    hero_tools_label:"Stack de modelación",
+
+    tools_eyebrow:"Herramientas y plataformas",
+    tools_h3:"Software estándar de industria, aplicado con disciplina.",
+    tools_p:"Trabajamos dentro de las herramientas en las que tu equipo ya confía — elegidas por lo que cada una hace bien, no porque tengamos licencia.",
+    tool_leapfrog:"Modelación 3D implícita", tool_vulcan:"Mine planning y recursos", tool_datamine:"Estimación de recursos", tool_surpac:"Bases geológicas",
+    tool_arcgis:"Análisis espacial", tool_qgis:"GIS open-source", tool_python:"Automatización y pipelines", tool_feflow:"Simulación hidrogeológica",
+
+    logos_label:"Engagements seleccionados · entregados bajo NDA",
+
+    problem_eyebrow:"El costo de la incertidumbre",
+    problem_h2:"Los supuestos errados del subsuelo escalan rápido.",
+    problem_p1:"En minería y proyectos ambientales, cada decisión se apoya en lo que se asume que existe bajo la superficie. Un dataset hidrogeológico mal integrado, un modelo geológico desactualizado, o una capa GIS desconectada pueden traducirse en meses de retrabajo, CAPEX mal asignado o demoras de permisos por millones.",
+    problem_p2:"La mayoría de las operadoras no carecen de datos — carecen de la mano especializada para integrarlos, interpretarlos y modelarlos al nivel que sus decisiones requieren. Ahí entramos.",
+    problem_pain_1_t:"Decisiones demoradas", problem_pain_1_d:"Equipos esperando a un geólogo para reconciliar datasets en conflicto.",
+    problem_pain_2_t:"Riesgo oculto", problem_pain_2_d:"Modelos que no reflejan perforación reciente ni reinterpretaciones estructurales.",
+    problem_pain_3_t:"Dispersión de herramientas", problem_pain_3_d:"Leapfrog, ArcGIS, QGIS, Surpac — sin nadie integrando los outputs.",
+
+    story_eyebrow:"Por qué nuestros proyectos se resuelven distinto",
+    story_quote:"La mayoría de las consultoras subcontratan parte del trabajo. <span class=\"mark\">Nosotros mantenemos campo, laboratorio y datos bajo un mismo techo</span> — por eso nuestras respuestas llegan antes, resisten auditoría, y no se caen cuando alguien pregunta ¿de dónde sale este número?",
+    story_1_tag:"— Un solo equipo", story_1_h:"Campo, laboratorio y datos en un solo equipo.",
+    story_1_p:"Los logs de sondajes, las muestras hidro y las capas GIS no pasan por una cadena de subcontratistas antes de entrar al modelo. Menos traspasos, menos errores de traducción, plazos más ajustados.",
+    story_2_tag:"— Auditable", story_2_h:"Cada resultado, trazable a su origen.",
+    story_2_p:"Cuando se requiere, implementamos trazabilidad de datos con blockchain en toda la cadena del informe — para que el cliente pueda verificar que un número no fue alterado silenciosamente entre el campo y el entregable final.",
+    story_3_tag:"— Velocidad + certeza", story_3_h:"Más velocidad, menos incertidumbre.",
+    story_3_p:"Modelación implícita en Leapfrog combinada con nuestras propias herramientas de procesamiento nos permite entregar respuestas más precisas en menos tiempo — sobre todo en proyectos donde perforación, estructura e hidro deben reconciliar.",
+
+    process_eyebrow:"Cómo se desarrolla un proyecto", process_h2:"Cuatro actos. Sin sorpresas.",
+    process_intro:"Desde el primer email hasta la entrega final, cada engagement sigue el mismo arco disciplinado — así siempre sabés en qué acto estamos y qué se entrega al cierre.",
+    proc_1_h:"Nos escribís a info@gexplo.com.", proc_1_p:"Un brief corto: etapa, commodity, sitio, la pregunta que está bloqueando la decisión. Respondemos en un día hábil — usualmente antes.",
+    proc_2_h:"Call de scoping de 30 min, bajo NDA.", proc_2_p:"Firmamos NDA antes de mover nada sensible. Mostrás los datos, hacemos las preguntas incómodas, y acordamos si es sesión horaria, proyecto fijo o retainer.",
+    proc_3_h:"Propuesta en 48–72 horas.", proc_3_p:"Entregables, timeline, precio, supuestos, exclusiones. Pagada por adelantado. Créditos de sesión aplican al trabajo de proyecto dentro de 30 días.",
+    proc_4_h:"Ejecución — y handoff limpio.", proc_4_p:"Updates asincrónicos semanales, revisiones por hito, entrega final en tu stack (Leapfrog, Surpac, Vulcan, ArcGIS). Datos fuente devueltos o borrados. Tu equipo puede auditar cada paso.",
+
+    services_eyebrow:"Servicios",
+    services_h2:"Modelación del subsuelo, GIS y advisory — tres tracks enfocados.",
+    services_intro:"Tres tracks enfocados. Cada uno planteado desde el problema que resuelve, el resultado que obtenés, y cómo se inserta en el flujo de tu equipo.",
+    ps_problem:"El problema", ps_solution:"Lo que entregamos", ps_result:"El resultado",
+
+    b1_tag:"Core · Premium", b1_h3:"Modelación del subsuelo",
+    b1_lead:"Modelos 3D geológicos e hidrogeológicos que convierten datos crudos de perforación, estructura y ambiente en decisiones defendibles.",
+    b1_price:"A medida · cotización",
+    b1_problem:"Datos de perforación fragmentados, superficies estructurales desactualizadas y datasets hidro desconectados — frenando estimación, planeamiento y permisos.",
+    b1_s1:"— Modelación 3D implícita (Leapfrog Geo / Works)", b1_s2:"— Reinterpretación estructural y litológica", b1_s3:"— Integración e interpretación de datos hidrogeológicos", b1_s4:"— Soporte y validación de estimación de recursos", b1_s5:"— Entregables en tu stack (Leapfrog, Vulcan, Datamine, Surpac)",
+    b1_result:"Una única fuente de verdad subsuperficial sobre la que tus ingenieros, hidrogeólogos y planificadores pueden construir — con cada supuesto defendible en auditoría.",
+
+    b2_tag:"Entrada · turnaround rápido", b2_h3:"GIS e inteligencia espacial",
+    b2_lead:"Flujos espaciales limpios y reproducibles — cartografía, análisis y automatización — para convertir datos geoespaciales crudos en respuestas operativas claras.",
+    b2_price:"De USD 200 a 3,000",
+    b2_problem:"Capas GIS dispersas entre equipos, proyecciones inconsistentes, repeticiones manuales del mismo mapa cada trimestre.",
+    b2_s1:"— Cartografía temática y técnica (ArcGIS Pro, QGIS)", b2_s2:"— Análisis espacial y geoprocesamiento", b2_s3:"— Automatización de flujos (Python, ModelBuilder)", b2_s4:"— Integración de datos de campo, laboratorio y fuentes legacy",
+    b2_result:"Flujos espaciales repetibles que tu equipo realmente usa — con mapas que responden preguntas, no que decoran informes.",
+
+    b3_tag:"Monetización · Advisory", b3_h3:"Soporte experto, advisory y due diligence",
+    b3_lead:"Experiencia senior on-demand para revisiones técnicas, segundas opiniones, soporte de due diligence y advisory embebida — facturado por hora o retainer.",
+    b3_price:"Desde USD 75/h",
+    b3_problem:"Necesitás ojos senior sobre un modelo, reporte o adquisición — sin el costo y calendario de una consultoría completa.",
+    b3_s1:"— Revisión técnica de modelos 3D e interpretaciones", b3_s2:"— Soporte due diligence (M&A, permisos, inversores)", b3_s3:"— Segunda opinión en flujos de recursos y reservas", b3_s4:"— Advisory embebido vía retainer mensual",
+    b3_result:"Input senior defendible exactamente cuando lo necesitás — ver precios en la siguiente sección.",
+    b3_see_pricing:"Ver precios",
+
+    modes_eyebrow:"Cómo trabajamos", modes_h2:"Tres modos de contratarnos.",
+    modes_intro:"Consulta horaria para preguntas tácticas, proyectos de alcance fijo para trabajo de modelación, y retainers para equipos que necesitan un geólogo senior on-call. Todos los engagements se pagan por adelantado; los créditos de sesión se aplican al trabajo de proyecto dentro de 30 días.",
+    modes_hourly_label:"Consulta experta · por hora",
+    tier1_tag:"Sesión estándar", tier1_desc:"Agendada 48h+ antes. Q&A técnico, scoping, revisión preliminar.",
+    tier2_tag:"Sesión avanzada", tier2_desc:"Trabajo técnico profundo: revisión de modelo en vivo, crítica de interpretación, input estratégico.",
+    tier3_tag:"Urgente / fuera de horario",   tier3_desc:"Misma semana, fines de semana o fuera de 08–17 ART. Agendamiento prioritario, tarifa extraordinaria.",
+    modes_hourly_note:"Todas las sesiones se pagan por adelantado. El tiempo no usado se acredita al trabajo de proyecto hasta 30 días.",
+    modes_project_label:"Proyectos de alcance fijo", modes_project_h:"Engagements con alcance fijo",
+    modes_project_p:"Entregables definidos, timeline definido, precio definido. Para modelos 3D geológicos, integraciones hidrogeológicas, builds GIS y due diligence. Cotización en 48–72h tras el call de scoping.",
+    modes_project_cta:"Pedir cotización",
+    modes_retainer_label:"Soporte continuo · retainer", modes_retainer_h:"Retainers mensuales",
+    retainer_1:"Essential · USD 300/mes — horas on-call + revisión asincrónica",
+    retainer_2:"Active · USD 700/mes — syncs semanales, involucramiento más profundo",
+    retainer_3:"Embedded · USD 1,200+/mes — bandwidth dedicado, input en roadmap",
+    modes_retainer_cta:"Conversar un retainer",
+
+    midcta_eyebrow:"Próximo paso", midcta_h:"¿Tenés un modelo, dataset o pregunta de due diligence?",
+
+    proof_eyebrow:"Casos · snapshots anonimizados",
+    proof_h2:"Nombres protegidos. Resultados reales.",
+    proof_note:"Todos los engagements bajo NDA. Detalles abstraídos; enfoque y resultados representativos del trabajo real.",
+    case1_tag:"PÓRFIDO CU-AU · SAN JUAN, AR", case1_h:"Remodelado 3D geológico y soporte de recursos",
+    case1_challenge_l:"Desafío", case1_challenge:"Modelo estructural desactualizado en conflicto con perforación infill reciente; bloqueando actualización de recursos.",
+    case1_outcome_l:"Resultado", case1_outcome:"Reinterpretación estructural y litológica completa en Leapfrog Geo; estimación desbloqueada en 6 semanas.",
+    case2_tag:"SALMUERA DE LITIO · PUNA, AR", case2_h:"Integración de datos hidrogeológicos",
+    case2_challenge_l:"Desafío", case2_challenge:"Datasets de ensayos de bombeo y geoquímica de años, fragmentados entre consultores; permisos en riesgo.",
+    case2_outcome_l:"Resultado", case2_outcome:"Base integrada y marco 3D hidrogeológico consistente entregado al equipo de EIA; permisos en cronograma.",
+    case3_tag:"DUE DILIGENCE · PRE-M&A", case3_h:"Revisión técnica independiente",
+    case3_challenge_l:"Desafío", case3_challenge:"El comprador necesitaba segunda opinión senior sobre los modelos geológicos e hidro del target antes del LOI.",
+    case3_outcome_l:"Resultado", case3_outcome:"Memo crítico con red-flags entregado en 10 días hábiles; informó renegociación de términos.",
+
+    reach_eyebrow:"Alcance global",
+    reach_h2:"Remoto primero. Pensado para proyectos cross-border.",
+    reach_p:"Con base en Argentina, atendemos operadoras mineras y ambientales en toda América, Canadá y Australia. Precios en USD. Entrega remota con cadencia asincrónica clara. Visitas on-site cuando el alcance lo requiere.",
+    reach_r1:"Argentina · Chile · Perú · Brasil", reach_r2:"Estados Unidos", reach_r3:"Canadá", reach_r4:"Australia",
+
+    about_eyebrow:"Nosotros",
+    about_h2:"Participación experta directa. Sin capas entre los datos y la decisión.",
+    about_role:"Geólogo Senior · Founder",
+    about_p1:"Liderado por Pedro Daniel Cardoso Justo, geólogo senior con 10+ años entregando modelación 3D del subsuelo, GIS y trabajo de datos hidrogeológicos en proyectos mineros y ambientales en Argentina, Chile y más allá.",
+    about_p2:"Pedro se especializa en traducir la realidad caótica del campo — sondajes, mapeo estructural, ensayos de bombeo, geoquímica — en modelos 3D defendibles sobre los que los decisores pueden actuar. model.gexplo es la unidad especializada en modelación del subsuelo dentro de GEXPLO, respaldada por una red de especialistas en modelación 3D cuando el proyecto requiere más bandwidth.",
+    about_strength_1_t:"Modelación 3D geológica", about_strength_1_d:"Leapfrog Geo/Works · implícita · soporte de recursos",
+    about_strength_2_t:"Integración hidrogeológica", about_strength_2_d:"Reconciliación de datos · modelos conceptuales · soporte EIA",
+    about_strength_3_t:"GIS y automatización", about_strength_3_d:"ArcGIS Pro · QGIS · Python · flujos reproducibles",
+    about_strength_4_t:"Equipo de modeladores on tap", about_strength_4_d:"Red de modeladores 3D especializados, escalada al alcance",
+    about_cta:"Hablar con Pedro",
+
+    conf_eyebrow:"Confidencialidad", conf_h2:"Tus datos son tuyos.",
+    conf_p:"Cada engagement queda bajo NDA antes de que se mueva un solo dato. Los archivos fuente quedan en tu lado o se devuelven y se borran al handoff. Ningún caso se publica sin consentimiento escrito.",
+    conf_pillar_1_t:"NDA antes del kickoff", conf_pillar_1_d:"Tu template o el nuestro. Sin excepciones.",
+    conf_pillar_2_t:"Transferencia encriptada", conf_pillar_2_d:"Buckets del cliente o drops encriptados.",
+    conf_pillar_3_t:"Datos devueltos y borrados", conf_pillar_3_d:"Handoff documentado al cierre del proyecto.",
+    conf_pillar_4_t:"Sin casos públicos", conf_pillar_4_d:"Referencias abstraídas únicamente, con consentimiento escrito.",
+
+    contact_eyebrow:"Contacto", contact_h2:"Empezá con un call de scoping.",
+    contact_p:"15 minutos, gratis, sin pitch. Vos traés la pregunta; te decimos si es sesión horaria, proyecto de alcance fijo o retainer — y qué timeline realista esperar.",
+    contact_book:"Escribir a info@gexplo.com", contact_or:"o envianos un brief estructurado abajo →", contact_base:"Paraná, Entre Ríos · Argentina",
+    contact_address:"Mirador Téc · Gregoria Matorras de San Martín 861, of. 106 · E3100 Paraná, Entre Ríos, Argentina",
+    contact_hours:"Lun–Vie · 08:00–17:00 ART (UTC-3) · Fuera de horario disponible como tarifa extraordinaria",
+    foot_addr:"Mirador Téc · Gregoria Matorras 861 of. 106<br/>E3100 Paraná, Entre Ríos · AR",
+    form_name:"Nombre", form_email:"Email", form_company:"Empresa", form_service:"Servicio de interés",
+    form_select:"Seleccionar…", form_opt_1:"Modelación del subsuelo (proyecto)", form_opt_2:"GIS e inteligencia espacial", form_opt_3:"Consulta experta (horaria)", form_opt_4:"Due diligence / revisión técnica", form_opt_5:"Retainer mensual",
+    form_brief:"Brief", form_brief_ph:"Etapa del proyecto, commodity, ubicación, pregunta clave, timeline…",
+    form_nda_note:"NDA disponible a pedido antes de compartir detalles.",
+    form_send:"Enviar brief", form_privacy:"Tus datos se usan solo para responder. Nunca se comparten.",
+    form_success:"✓ Gracias — abriendo tu cliente de email para enviar…",
+
+    final_h:"Listos cuando tu proyecto lo esté.", final_p:"Reservá un call de scoping, pedí cotización o escribinos directamente. NDA a pedido.",
+
+    foot_tagline:"Modelación independiente del subsuelo para minería y proyectos ambientales. La práctica especializada en subsuelo de GEXPLO.",
+    foot_services:"Servicios", foot_company:"Empresa", foot_contact:"Contacto",
+    nav_b1:"Modelación del subsuelo", nav_b2:"GIS e inteligencia espacial", nav_b3:"Soporte experto y advisory",
+    nav_nda:"Confidencialidad",
+    foot_rights:"Todos los derechos reservados.", foot_base:"Argentina · Atendiendo América, Canadá y Australia",
+
+    m_years:"Años en subsuelo", m_projects:"Proyectos entregados", m_countries:"Países atendidos", m_nda:"Engagements bajo NDA",
+  }
+};
+
+/* ============================================================
+   LANGUAGE
+   ============================================================ */
+let currentLang = localStorage.getItem('mg_lang') || 'en';
+function applyLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('mg_lang', lang);
+  document.documentElement.lang = lang;
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if (t[k] != null) el.innerHTML = t[k];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const k = el.getAttribute('data-i18n-placeholder');
+    if (t[k] != null) el.setAttribute('placeholder', t[k]);
+  });
+  // Lang toggle visual
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    const active = b.dataset.lang === lang;
+    b.classList.toggle('text-white', active);
+    b.classList.toggle('bg-white/5', active);
+    b.classList.toggle('text-slate-400', !active);
+  });
+  // Re-render metrics labels
+  renderMetrics();
+}
+document.querySelectorAll('.lang-btn').forEach(b => {
+  b.addEventListener('click', () => applyLang(b.dataset.lang));
+});
+
+/* ============================================================
+   METRICS RENDER + COUNTER
+   ============================================================ */
+function renderMetrics() {
+  const grid = document.getElementById('metrics-grid');
+  grid.innerHTML = metricsData.map((m, i) => `
+    <div class="reveal">
+      <div class="flex items-baseline gap-1">
+        <div class="counter-num text-white text-4xl md:text-5xl font-light" data-target="${m.val}" data-suffix="${m.suffix}">0${m.suffix}</div>
+      </div>
+      <div class="mono text-[11px] tracking-widest uppercase text-slate-500 mt-2">${translations[currentLang][m.key] || (currentLang==='es'?m.label_es:m.label_en)}</div>
+    </div>
+  `).join('');
+  observeReveals();
+}
+
+function runCounter(el) {
+  const target = +el.dataset.target;
+  const suffix = el.dataset.suffix || '';
+  const duration = 1400;
+  const start = performance.now();
+  function tick(now) {
+    const p = Math.min(1, (now - start) / duration);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(eased * target) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+
+/* ============================================================
+   REVEAL + COUNTER OBSERVERS
+   ============================================================ */
+let revealObs;
+function observeReveals() {
+  if (!revealObs) {
+    revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          e.target.querySelectorAll('.counter-num').forEach(c => {
+            if (!c.dataset.ran) { c.dataset.ran = '1'; runCounter(c); }
+          });
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+  }
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => revealObs.observe(el));
+}
+
+/* ============================================================
+   ACCORDION
+   ============================================================ */
+document.querySelectorAll('.accordion-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    const target = document.getElementById(btn.dataset.target);
+    btn.setAttribute('aria-expanded', String(!expanded));
+    target.classList.toggle('open', !expanded);
+  });
+});
+
+/* ============================================================
+   QUICK EMAIL (replaces Calendly)
+   ============================================================ */
+function quickEmail() {
+  const subj = encodeURIComponent('[model.gexplo] Scoping request');
+  const body = encodeURIComponent('Hi,\n\nI\u2019d like to scope a subsurface / GIS / advisory project with model.gexplo.\n\n• Project stage:\n• Commodity / site:\n• Key question:\n• Timeline:\n\nThanks,');
+  window.location.href = `mailto:${CONFIG.EMAIL}?subject=${subj}&body=${body}`;
+}
+document.getElementById('open-calendly')?.addEventListener('click', quickEmail);
+
+/* ============================================================
+   FORM — mailto fallback
+   ============================================================ */
+const form = document.getElementById('contact-form');
+const brief = document.getElementById('f-brief');
+const charCount = document.getElementById('char-count');
+brief.addEventListener('input', () => { charCount.textContent = brief.value.length; });
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const name    = document.getElementById('f-name').value.trim();
+  const email   = document.getElementById('f-email').value.trim();
+  const company = document.getElementById('f-company').value.trim();
+  const service = document.getElementById('f-service').value;
+  const body    = brief.value.trim();
+  const errBox  = document.getElementById('form-error');
+  const okBox   = document.getElementById('form-success');
+  errBox.classList.add('hidden'); okBox.classList.add('hidden');
+  if (!name || !email) { errBox.textContent = currentLang==='es' ? 'Faltan campos obligatorios.' : 'Required fields missing.'; errBox.classList.remove('hidden'); return; }
+
+  // 1) Try Supabase insert (persists the lead server-side)
+  let supabaseOk = false;
+  try {
+    if (window.__supabase) {
+      const { error } = await window.__supabase.from('leads').insert([{
+        name, email, company, service, brief: body,
+        source: 'model.gexplo',
+        user_agent: navigator.userAgent,
+        lang: currentLang
+      }]);
+      if (!error) supabaseOk = true;
+      else console.warn('[leads] supabase insert error:', error.message);
+    }
+  } catch (err) {
+    console.warn('[leads] supabase unreachable:', err);
+  }
+
+  // 2) Always open the user's email client so they have a copy (and as fallback)
+  const subject = encodeURIComponent(`[model.gexplo] ${service || 'inquiry'} — ${company || name}`);
+  const emailBody = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nService: ${service}\n\nBrief:\n${body}`
+  );
+  if (!supabaseOk) {
+    window.location.href = `mailto:${CONFIG.EMAIL}?subject=${subject}&body=${emailBody}`;
+  }
+  okBox.classList.remove('hidden');
+  form.reset();
+  if (charCount) charCount.textContent = '0';
+});
+
+/* ============================================================
+   WHATSAPP LINKS
+   ============================================================ */
+const waUrl = `https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent('Hi, I’d like to scope a subsurface modeling project.')}`;
+document.getElementById('wa-float').href = waUrl;
+document.getElementById('wa-link').href = waUrl;
+document.getElementById('wa-link').textContent = CONFIG.WHATSAPP_DISPLAY;
+document.getElementById('wa-link-foot').href = waUrl;
+
+/* ============================================================
+   INIT
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('founder-card-name') && (document.getElementById('founder-card-name').textContent = CONFIG.FOUNDER_NAME);
+renderMetrics();
+applyLang(currentLang);
+
+/* ============================================================
+   PRE-LAUNCH CHECKLIST
+   ============================================================
+   [ ] CONFIG.CALENDLY_URL → real booking page
+   [ ] CONFIG.WHATSAPP_NUMBER → real number
+   [ ] Founder photo → /founder.jpg (replace placeholder in About)
+   [ ] /og.png → 1200×630 social card
+   [ ] favicon → real brand mark
+   [ ] Replace case study tags if client consent available
+   [ ] Confirm retainer pricing & hourly ranges
+   [ ] Form endpoint → consider Formspree/Netlify vs mailto
+   [ ] Add Stripe payment link for Standard/Advanced/Urgent sessions if desired
+   ============================================================ */
+</script>
 </body>
 </html>
